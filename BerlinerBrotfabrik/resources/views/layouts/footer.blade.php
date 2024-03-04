@@ -1,13 +1,3 @@
-<style>
- #footer-container {
-     background-image:
-         radial-gradient(circle at 50% 100%, transparent 12px, #0099ff 12px, #0099ff 15px, transparent 15px),
-         radial-gradient(circle at 50% calc(100% - 1px), #0099ff 12px, transparent 12px);
-     background-size: 30px 30px;
-     background-repeat: repeat-x;
- }
-</style>
-   
 <!-- Footer -->
 <footer class="gb-green gb-white-text py-6 px-10" id="footer-container">
     <div class="container mx-auto flex flex-wrap justify-between items-start mt-10">
