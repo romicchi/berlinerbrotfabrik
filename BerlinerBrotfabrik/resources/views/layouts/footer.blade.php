@@ -1,4 +1,4 @@
-<!-- Footer -->
+<!-- FOOTER -->
 <footer class="gb-green gb-white-text py-6 px-10" id="footer-container">
     <div class="container mx-auto flex flex-wrap justify-between items-start mt-10">
         <div class="w-full sm:w-1/2 md:w-1/4">
@@ -24,20 +24,21 @@
             <p>Sunday : 8:00AM to 6:00PM</p>
         </div>
     </div>
-    <!-- at the center right beside the copyright can you add logo for facebook, instagram, whatsapp, and tiktok -->
+
+    <!-- COPYRIGHT -->
     <div class="container mx-auto flex justify-center items-center mt-6">
         <p>Copyright &copy; 2024 by Berliner Brotfabrik.</p>
         <div class="flex items-center">
-            <a href="#" class="text-white hover:text-gray-300 mx-2">
+            <a href="https://www.facebook.com/profile.php?id=100058154600282" class="text-white hover:text-gray-300 mx-2">
                 <img src="{{ asset('img/facebook_icon.png') }}" alt="Facebook" class="w-5 h-5" loading="lazy">
             </a>
-            <a href="#" class="text-white hover:text-gray-300 mx-2">
+            <a href="https://www.instagram.com/berlinerbrotfabrik/?hl=en" class="text-white hover:text-gray-300 mx-2">
                 <img src="{{ asset('img/instagram_icon.png') }}" alt="Instagram" class="w-5 h-5" loading="lazy">
             </a>
-            <a href="#" class="text-white hover:text-gray-300 mx-2">
+            <a href="https://www.tiktok.com/@berlinerbrotfabrik" class="text-white hover:text-gray-300 mx-2">
                 <img src="{{ asset('img/whatsapp_icon.png') }}" alt="WhatsApp" class="w-5 h-5" loading="lazy">
             </a>
-            <a href="#" class="text-white hover:text-gray-300 mx-2">
+            <a href="https://wa.me/6281220000000" class="text-white hover:text-gray-300 mx-2">
                 <img src="{{ asset('img/tiktok_icon.png') }}" alt="TikTok" class="w-5 h-5" loading="lazy">
             </a>
         </div>
