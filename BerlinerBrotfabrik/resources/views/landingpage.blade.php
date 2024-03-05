@@ -24,7 +24,7 @@
         <!-- Container with Image at the left side landscape then at the right is the "Get To Know Us" with the description "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. and a button "Our Story""-->
         <section class="container mx-auto flex flex-col lg:flex-row items-center justify-center py-24 lg:py-32 lg:pl-16 lg:pr-16">
             <div class="lg:w-1/2 lg:pr-16 mb-8 lg:mb-0">
-                <img src="{{ asset('img/about.png') }}" alt="Bakery" class="rounded-lg">
+                <img src="{{ asset('img/about.png') }}" alt="Bakery" class="rounded-lg shadow-green hover-effect">
             </div>
             <div class="lg:w-1/2 text-center">
                 <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-none gb-green-text md:text-4xl lg:text-5xl">Get To Know Us</h2>
@@ -38,28 +38,28 @@
             <div class="flex flex-row">
                 <div class="mr-8 flex flex-col items-center text-center">
                     <div class="flex items-center justify-center w-16 h-16 text-white gb-green rounded-full">
-                        <i class="fas fa-star fa-2x"></i>
+                        <i class="fas fa-star fa-2x icon-hover"></i>
                     </div>
                     <h3 class="mt-4 text-xl font-semibold gb-green-text">Consistent Quality</h3>
                     <p class="mt-2 text-sm font-normal text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
                 <div class="mr-8 flex flex-col items-center text-center">
                     <div class="flex items-center justify-center w-16 h-16 text-white gb-green rounded-full">
-                        <i class="fas fa-leaf fa-2x"></i>
+                        <i class="fas fa-leaf fa-2x icon-hover"></i>
                     </div>
                     <h3 class="mt-4 text-xl font-semibold gb-green-text">Fresh</h3>
                     <p class="mt-2 text-sm font-normal text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
                 <div class="mr-8 flex flex-col items-center text-center">
                     <div class="flex items-center justify-center w-16 h-16 text-white gb-green rounded-full">
-                        <i class="fas fa-utensils fa-2x"></i>
+                        <i class="fas fa-utensils fa-2x icon-hover"></i>
                     </div>
                     <h3 class="mt-4 text-xl font-semibold gb-green-text">Tasty</h3>
                     <p class="mt-2 text-sm font-normal text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
                 <div class="mr-8 flex flex-col items-center text-center">
                     <div class="flex items-center justify-center w-16 h-16 text-white gb-green rounded-full">
-                        <i class="fas fa-heart fa-2x"></i>
+                        <i class="fas fa-heart fa-2x icon-hover"></i>
                     </div>
                     <h3 class="mt-4 text-xl font-semibold gb-green-text">Less / Low Calories</h3>
                     <p class="mt-2 text-sm font-normal text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -69,21 +69,30 @@
 
         <!-- New container, at the left center side the header Things We Make the description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. and a button "Full Menu". then at the right side is three image -->
         <div class="gb-lgreen bg-blend-multiply bg-center bg-no-repeat">
-            <section class="container mx-auto flex flex-col lg:flex-row items-center justify-center py-24 lg:py-32 w-full">
+            <section class="container mx-auto flex flex-col lg:flex-row items-center justify-center py-32 lg:py-40 w-full">
                 <div class="lg:w-1/2 lg:pr-16 mb-8 text-center lg:mb-0">
                     <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-none gb-lgreen-text md:text-4xl lg:text-5xl">Things We Make</h2>
                     <p class="mb-8 text-lg font-normal gb-lgreen-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <a href="#" class="inline-block px-8 py-3 text-sm font-semibold leading-relaxed text-gray-800 bg-gray-200 rounded hover:bg-green-900 hover:text-gray-200">Full Menu</a>
                 </div>
                 <div class="lg:w-1/2 flex flex-row justify-center items-center">
-                    <div class="mr-8">
-                        <img src="{{ asset('images/bread.jpg') }}" alt="Bread" class="rounded-lg">
+                    <div class="mr-8 relative hover-effect">
+                        <img src="{{ asset('img/cake.png') }}" alt="Cake" class="rounded-lg shadow-lgreen" loading="lazy">
+                        <div class="absolute top-0 left-0 w-full h-full flex items-start justify-start p-2">
+                            <p class="text-white text-2xl font-bold">Cake</p>
+                        </div>
                     </div>
-                    <div class="mr-8">
-                        <img src="{{ asset('images/cake.jpg') }}" alt="Cake" class="rounded-lg">
+                    <div class="mr-8 relative hover-effect">
+                        <img src="{{ asset('img/pastry.png') }}" alt="Pastry" class="rounded-lg shadow-lgreen" loading="lazy">
+                        <div class="absolute top-0 left-0 w-full h-full flex items-start justify-start p-2">
+                            <p class="text-white text-2xl font-bold">Pastry</p>
+                        </div>
                     </div>
-                    <div>
-                        <img src="{{ asset('images/pastry.jpg') }}" alt="Pastry" class="rounded-lg">
+                    <div class="mr-8 relative hover-effect">
+                        <img src="{{ asset('img/drink.png') }}" alt="Drink" class="rounded-lg shadow-lgreen" loading="lazy">
+                        <div class="absolute top-0 left-0 w-full h-full flex items-start justify-start p-2">
+                            <p class="text-white text-2xl font-bold">Drink</p>
+                        </div>
                     </div>
                 </div>
             </section>
