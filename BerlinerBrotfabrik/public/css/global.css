@@ -33,3 +33,15 @@
 .hover-effect:hover {
     transform: scale(1.05);
 }
+
+.shadow-green {
+    box-shadow: -15px 20px 0px 0 #789461;
+}
+
+.shadow-green-reverse {
+    box-shadow: 20px 15px 0px 0 #789461;
+}
+
+.shadow-lgreen {
+    box-shadow: 20px 15px 0px 0 #DBE7C9;
+}

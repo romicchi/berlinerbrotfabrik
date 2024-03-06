@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\MessageController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,3 +22,13 @@ Route::get('/', function () {
 Route::get('/Aboutus', function () {
     return view('aboutus');
 });
+
+Route::get('/Menu', function () {
+    return view('menu');
+});
+
+Route::get('/Contactus', function () {
+    return view('contactus');
+});
+
+Route::post('/submitForm', [MessageController::class, 'submitForm'])->name('submit.form');

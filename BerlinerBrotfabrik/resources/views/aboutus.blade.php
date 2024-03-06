@@ -55,13 +55,13 @@
 
         <section class="container mx-auto flex flex-col lg:flex-row items-center justify-center pb-24 pt-24 lg:pt-16 lg:pl-16 lg:pr-16">
             <div class="lg:w-1/3 lg:pr-8 mb-8 lg:mb-0 text-center">
-                <img src="{{ asset('img/Harald.png') }}" alt="Team 1" class="rounded-lg shadow-green hover-effect">
+                <img src="{{ asset('img/Harald.png') }}" alt="Team 1" class="rounded-lg hover-effect">
                 <h3 class="mt-4 text-xl font-semibold gb-green-text">German Consultant</h3>
                 <p class="font-medium text-gray-600">Harald Fuechsel</p>
                 <p class="text-sm font-normal text-gray-600">Dipl.-Eng., Business Lawyer, German Senior Expert, Senator h.c. Education and Technology</p>
             </div>
             <div class="lg:w-1/3 lg:pr-8 mb-8 lg:mb-0 text-center">
-                <img src="{{ asset('img/Hena.png') }}" alt="Team 2" class="rounded-lg shadow-green hover-effect">
+                <img src="{{ asset('img/Hena.png') }}" alt="Team 2" class="rounded-lg hover-effect">
                 <h3 class="mt-4 text-xl font-semibold gb-green-text">Owner</h3>
                 <p class="font-medium text-gray-600">RD Hena Mulianakusumah</p>
                 <p class="text-sm font-normal text-gray-600">
@@ -73,7 +73,7 @@
                 </p>
             </div>
             <div class="lg:w-1/3 lg:pr-8 mb-8 lg:mb-0 text-center">
-                <img src="{{ asset('img/Rari.png') }}" alt="Team 3" class="rounded-lg shadow-green hover-effect">
+                <img src="{{ asset('img/Rari.png') }}" alt="Team 3" class="rounded-lg hover-effect">
                 <h3 class="mt-4 text-xl font-semibold gb-green-text">Master Baker</h3>
                 <p class="font-medium text-gray-600">Rari Gusep</p>
             </div>
