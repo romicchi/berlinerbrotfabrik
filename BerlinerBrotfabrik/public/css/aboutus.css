@@ -10,3 +10,7 @@
     position: relative;
     bottom: 10px; /* Adjust as needed */
 }
+
+.footer-top-area::after {
+    background-image: url("../img/bg-patern2.png");
+}

@@ -13,3 +13,7 @@
 .icon-hover:hover {
     transform: rotate(360deg);
 }
+
+.footer-top-area::after {
+    background-image: url("../img/bg-patern1.png");
+}

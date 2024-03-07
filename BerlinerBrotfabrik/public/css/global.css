@@ -45,3 +45,7 @@
 .shadow-lgreen {
     box-shadow: 20px 15px 0px 0 #DBE7C9;
 }
+
+.text-danger {
+    color: #FF0000;
+}

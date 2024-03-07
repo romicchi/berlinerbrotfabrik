@@ -1,5 +1,23 @@
 <!-- FOOTER -->
-<footer class="gb-green gb-white-text py-6 px-10" id="footer-container">
+<style>
+
+.footer-top-area {
+    position: relative;
+}
+
+.footer-top-area::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+
+    </style>
+<footer class="footer-top-area gb-green gb-white-text py-6 px-10" id="footer-container">
     <div class="container mx-auto flex flex-wrap justify-between items-start mt-10">
         <div class="w-full px-2 sm:w-1/2 md:w-1/4 mb-4">
             <p class="text-3xl font-bold text-logo">Berliner Brotfabrik</p>
