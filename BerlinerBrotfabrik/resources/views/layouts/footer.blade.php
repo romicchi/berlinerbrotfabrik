@@ -26,20 +26,20 @@
     </div>
 
     <!-- COPYRIGHT -->
-    <div class="container mx-auto flex justify-center items-center mt-6">
+    <div class="container mx-auto flex flex-col-reverse sm:flex-row justify-center items-center mt-6">
         <p>Copyright &copy; 2024 by Berliner Brotfabrik.</p>
-        <div class="flex items-center">
+        <div class="flex items-center mb-4 sm:mb-0">
             <a href="https://www.facebook.com/profile.php?id=100058154600282" class="text-white hover:text-gray-300 mx-2">
-                <img src="{{ asset('img/facebook_icon.png') }}" alt="Facebook" class="w-8 h-5 md:w-5 md:h-5 lg:w-5 lg:h-5" loading="lazy">
+                <img src="{{ asset('img/facebook_icon.png') }}" alt="Facebook" class="w-5 h-5 md:w-5 md:h-5 lg:w-5 lg:h-5" loading="lazy">
             </a>
             <a href="https://www.instagram.com/berlinerbrotfabrik/?hl=en" class="text-white hover:text-gray-300 mx-2">
-                <img src="{{ asset('img/instagram_icon.png') }}" alt="Instagram" class="w-8 h-5 md:w-5 md:h-5 lg:w-5 lg:h-5" loading="lazy">
+                <img src="{{ asset('img/instagram_icon.png') }}" alt="Instagram" class="w-5 h-5 md:w-5 md:h-5 lg:w-5 lg:h-5" loading="lazy">
             </a>
             <a href="https://www.tiktok.com/@berlinerbrotfabrik" class="text-white hover:text-gray-300 mx-2">
-                <img src="{{ asset('img/whatsapp_icon.png') }}" alt="WhatsApp" class="w-8 h-5 md:w-5 md:h-5 lg:w-5 lg:h-5" loading="lazy">
+                <img src="{{ asset('img/whatsapp_icon.png') }}" alt="WhatsApp" class="w-5 h-5 md:w-5 md:h-5 lg:w-5 lg:h-5" loading="lazy">
             </a>
             <a href="https://wa.me/6281220000000" class="text-white hover:text-gray-300 mx-2 ">
-                <img src="{{ asset('img/tiktok_icon.png') }}" alt="TikTok" class="w-8 h-5 md:w-5 md:h-5 lg:w-5 lg:h-5" loading="lazy">
+                <img src="{{ asset('img/tiktok_icon.png') }}" alt="TikTok" class="w-5 h-5 md:w-5 md:h-5 lg:w-5 lg:h-5" loading="lazy">
             </a>
         </div>
     </div>
