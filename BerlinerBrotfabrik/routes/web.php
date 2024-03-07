@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ItemController;
+use App\Http\Controllers\MenuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,20 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('landingpage');
 });
+
+Route::get('/menupage', function () {
+    return view('menupage');
+})->name('menupage');
+
+Route::get('/adminpage', function () {
+    return view('adminpage');
+});
+
+Route::resource('items', ItemController::class);
+
+Route::get('/adminpage', [ItemController::class, 'adminPage'])->name('adminpage');
+Route::get('/menupage', [MenuController::class, 'showMenuPage'])->name('menupage');
+
+Route::get('/admin', [ItemController::class, 'index']);
+Route::get('/menu', [ItemController::class, 'menu']);
+

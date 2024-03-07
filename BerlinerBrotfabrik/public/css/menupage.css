@@ -1,0 +1,69 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.text-logo {
+    font-family: 'Old English Text MT', serif;
+}
+
+.text-outline {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.next-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.3rem 1.5rem;
+    background-color: lightgrey;
+    color: #000;
+    border: .5px solid black;
+    border-radius: 0px;
+    font-size: 90%;
+    font-weight: 300;
+}
+
+.next-button:hover {
+    background-color: #838383;
+}
+
+.item-name {
+    color: #DBE7C9;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    margin: 4% 0 0.5rem;
+    text-align: center;
+    text-shadow: .08em 4px 0px rgba(163, 191, 168, 0.5); /* 50% opacity */
+    font-size: 3.5rem;
+}
+
+/* For tablets and small desktops */
+@media (max-width: 992px) {
+    .item-name {
+        font-size: 2.5rem;
+        margin-top: 20%;
+    }
+}
+
+.best-seller-logo {
+    width: 20%; /* Adjust as needed */
+    max-width: 30%;
+    margin: 2% 0 0.5rem;
+    height: auto;
+}
+
+/* For tablets and small desktops */
+@media (max-width: 992px) {
+    .best-seller-logo {
+        width: 70%; /* Adjust as needed */
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 768px) {
+    .best-seller-logo {
+        width: 90%; /* Adjust as needed */
+    }
+}
+

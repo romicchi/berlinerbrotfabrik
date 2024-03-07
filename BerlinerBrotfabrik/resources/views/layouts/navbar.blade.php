@@ -8,7 +8,7 @@
 </header>
 <header class="gb-white gb-green-text py-7">
     <div class="container text-xl mx-auto flex justify-center items-center">
-        <a href="#" class="mx-6">Menu</a>
+        <a href="{{ route('menupage') }}" class="mx-6">Menu</a>
         <a href="#" class="mx-6">About us</a>
         <a href="#" class="mx-6">Contact us</a>
     </div>
