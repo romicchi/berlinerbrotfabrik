@@ -23,25 +23,25 @@
         </header>
 
         <!-- OUR STORY -->
-        <section class="container mx-auto flex flex-col lg:flex-row items-center justify-center pt-24 lg:pt-16 lg:pl-16 lg:pr-16">
+        <section class="container mx-auto flex flex-col lg:flex-row items-center justify-center pt-24 lg:pt-16 lg:pl-16 lg:pr-16 px-4 sm:px-0">
             <div class="lg:w-1/2 lg:pr-16 mb-8 lg:mb-0">
-                <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-green-text md:text-3xl lg:text-4xl">Our Story</h2>
-                <div class="w-20 h-1 gb-lgreen rounded-full mb-6"></div>
+                <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-green-text text-center sm:text-left md:text-3xl lg:text-4xl">Our Story</h2>                
+                <div class="w-20 h-1 gb-lgreen rounded-full mb-6 mx-auto sm:mx-0"></div>
                 <p class="mb-8 text-lg font-normal text-justify text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="lg:w-1/2 lg:pl-0 overflow-hidden">
-                <img src="{{ asset('img/story.png') }}" alt="Story" class="transform transition duration-1000 hover:scale-110 object-scale-down">
+            <div class="lg:w-1/2 lg:pl-0 overflow-hidden mb-4 sm:mb-4 md:mb-8">
+                <img src="{{ asset('img/story.png') }}" alt="Story" class="transform transition duration-1000 hover:scale-110 object-scale-down w-full h-auto">
             </div>
         </section>
 
         <!-- WHO WE ARE -->
-        <section class="container mx-auto flex flex-col lg:flex-row items-center justify-center pb-24 lg:pb-16 lg:pl-16 lg:pr-16">
-            <div class="lg:w-1/2 lg:pr-0 mb-8 lg:mb-0 overflow-hidden">
-                <img src="{{ asset('img/who-we-are.png') }}" alt="Who" class="transform transition duration-1000 hover:scale-110 object-scale-down">
+        <section class="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-center pb-24 lg:pb-16 lg:pl-16 lg:pr-16 px-4 sm:px-0">
+            <div class="lg:w-1/2 lg:pr-0 lg:mb-0 overflow-hidden mb-8 sm:mb-0">
+                <img src="{{ asset('img/who-we-are.png') }}" alt="Who" class="transform transition duration-1000 hover:scale-110 object-scale-down w-full h-auto">
             </div>
             <div class="lg:w-1/2 lg:pl-16">
-                <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-green-text md:text-3xl lg:text-4xl">Who We Are</h2>
-                <div class="w-20 h-1 gb-lgreen rounded-full mb-6"></div>
+                <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-green-text text-center sm:text-left md:text-3xl lg:text-4xl">Who We Are</h2>
+                <div class="w-20 h-1 gb-lgreen rounded-full mb-6 mx-auto sm:mx-0"></div>
                 <p class="mb-8 text-lg font-normal text-justify text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
         </section>
@@ -53,26 +53,26 @@
             <div class="w-20 h-1 gb-lgreen rounded-full mx-auto mt-6 mb-6"></div>
         </section>
 
-        <section class="container mx-auto flex flex-col lg:flex-row items-center justify-center pb-24 pt-24 lg:pt-16 lg:pl-16 lg:pr-16">
-            <div class="lg:w-1/3 lg:pr-8 mb-8 lg:mb-0 text-center">
+        <section class="container mx-auto flex flex-col md:flex-row items-center justify-center pb-24 pt-24 md:pt-16 md:pl-16 md:pr-16">
+            <div class="w-full md:w-1/3 px-4 md:pr-8 mb-8 md:mb-0 text-center">
                 <img src="{{ asset('img/Harald.png') }}" alt="Team 1" class="rounded-lg shadow-green hover-effect">
                 <h3 class="mt-4 text-xl font-semibold gb-green-text">German Consultant</h3>
                 <p class="font-medium text-gray-600">Harald Fuechsel</p>
                 <p class="text-sm font-normal text-gray-600">Dipl.-Eng., Business Lawyer, German Senior Expert, Senator h.c. Education and Technology</p>
             </div>
-            <div class="lg:w-1/3 lg:pr-8 mb-8 lg:mb-0 text-center">
+            <div class="w-full md:w-1/3 px-4 md:pr-8 mb-8 md:mb-0 text-center">
                 <img src="{{ asset('img/Hena.png') }}" alt="Team 2" class="rounded-lg shadow-green hover-effect">
                 <h3 class="mt-4 text-xl font-semibold gb-green-text">Owner</h3>
                 <p class="font-medium text-gray-600">RD Hena Mulianakusumah</p>
                 <p class="text-sm font-normal text-gray-600">
-                <br>    Study in Germany, Regional Economic Development for SME and Start-Up (InWent),
-                <br>    Education in First German Bakery Academy, Olpe,
-                <br>    Training in Bakery Mohr in Frechen / Cologne,
-                <br>    Training in Gradel Bakery and Pastry, Dresden,
-                <br>    Involvement in Development of Bio- and Gluten free Bakery Products in the team of Dr. Quendt family, Freital / Dresden,
+                    <br>Study in Germany, Regional Economic Development for SME and Start-Up (InWent),
+                    <br>Education in First German Bakery Academy, Olpe,
+                    <br>Training in Bakery Mohr in Frechen / Cologne,
+                    <br>Training in Gradel Bakery and Pastry, Dresden,
+                    <br>Involvement in Development of Bio- and Gluten free Bakery Products in the team of Dr. Quendt family, Freital / Dresden,
                 </p>
             </div>
-            <div class="lg:w-1/3 lg:pr-8 mb-8 lg:mb-0 text-center">
+            <div class="w-full md:w-1/3 px-4 md:pr-8 mb-8 md:mb-0 text-center">
                 <img src="{{ asset('img/Rari.png') }}" alt="Team 3" class="rounded-lg shadow-green hover-effect">
                 <h3 class="mt-4 text-xl font-semibold gb-green-text">Master Baker</h3>
                 <p class="font-medium text-gray-600">Rari Gusep</p>
@@ -84,37 +84,37 @@
             <div class="container mx-auto px-4 lg:px-16">
                 <div class="flex flex-wrap -mx-2">
                     <!-- Top row -->
-                    <div class="w-full sm:w-1/2 px-12 py-12 mb-4 relative">
+                    <div class="w-full sm:w-1/2 px-12 py-6 sm:py-12 mb-4 relative">
                         <div class="overflow-hidden">
                             <img src="{{ asset('img/social-fb.png') }}" alt="Social 1" class="mx-auto shadow-green transform transition duration-1000 hover:scale-110 object-scale-down">
                         </div>
                         <a href="https://www.facebook.com/profile.php?id=100058154600282" target="_blank">
                             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-75 flex flex-col items-center justify-center w-1/4 h-1/8">
                                 <i class="fab fa-facebook-f text-blue-600"></i>
-                                <p class="mt-2">Follow Us On Facebook</p>
+                                <p class="mt-2 text-center">Follow Us On Facebook</p>
                             </div>
                         </a>
                     </div>
-                    <div class="w-full sm:w-1/2 px-12 py-12 mb-4 relative">
+                    <div class="w-full sm:w-1/2 px-12 py-6 sm:py-12 mb-4 relative">
                         <div class="overflow-hidden">
                             <img src="{{ asset('img/social-instagram.png') }}" alt="Social 2" class="mx-auto shadow-green transform transition duration-1000 hover:scale-110 object-scale-down">
                         </div>
                         <a href="https://www.instagram.com/berlinerbrotfabrik/?hl=en" target="_blank">
                             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-75 flex flex-col items-center justify-center w-1/4 h-1/8">
                                 <i class="fab fa-instagram text-purple-600"></i>
-                                <p class="mt-2">Follow Us On Instagram</p>
+                                <p class="mt-2 text-center">Follow Us On Instagram</p>
                             </div>
                         </a>
                     </div>
                     <!-- Bottom row -->
-                    <div class="w-full sm:w-1/2 px-12 py-12 mb-4 relative">
+                    <div class="w-full sm:w-1/2 px-12 py-6 sm:py-12 mb-4 relative">
                         <div class="overflow-hidden">
                             <img src="{{ asset('img/social-tiktok.png') }}" alt="Social 3" class="mx-auto shadow-green transform transition duration-1000 hover:scale-110 object-scale-down">
                         </div>
                         <a href="https://www.tiktok.com/@berlinerbrotfabrik" target="_blank">
                             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-75 flex flex-col items-center justify-center w-1/4 h-1/8">
                                 <i class="fab fa-tiktok text-black"></i>
-                                <p class="mt-2">Follow Us On TikTok</p>
+                                <p class="mt-2 text-center">Follow Us On TikTok</p>
                             </div>
                         </a>
                     </div>
