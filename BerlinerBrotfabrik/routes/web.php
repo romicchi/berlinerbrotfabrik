@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\MenuController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,9 +30,17 @@ Route::get('/adminpage', function () {
 
 Route::resource('items', ItemController::class);
 
-Route::get('/adminpage', [ItemController::class, 'adminPage'])->name('adminpage');
+Route::middleware(['authenticate'])->group(function () {
+    Route::get('/adminpage', [ItemController::class, 'adminPage'])->name('adminpage');
+    Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+});
+
 Route::get('/menupage', [MenuController::class, 'showMenuPage'])->name('menupage');
 
 Route::get('/admin', [ItemController::class, 'index']);
 Route::get('/menu', [ItemController::class, 'menu']);
 
+
+
+Route::get('/login', [AuthController::class, 'loginpage'])->name('login.page');
+Route::post('/login', [AuthController::class, 'login'])->name('login');
