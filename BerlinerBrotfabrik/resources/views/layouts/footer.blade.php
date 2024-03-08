@@ -24,20 +24,20 @@
             <p class="mb-6 mt-6">Lorem ipsum is not simply random text roots to popular pular belief It has roots in a piece of classic</p>
         </div>
         <div class="w-full px-2 sm:w-1/2 md:w-1/4 mb-4">
-            <h3 class="text-lg font-semibold mb-2">Information</h3>
+            <h3 class="text-lg font-semibold mb-2">Informasi</h3>
             <ul class="list-none">
                 <li><a href="/Menu" class="text-white hover:text-gray-300">Menu</a></li>
-                <li><a href="/Aboutus" class="text-white hover:text-gray-300">About Us</a></li>
-                <li><a href="/Contactus" class="text-white hover:text-gray-300">Contact Us</a></li>
+                <li><a href="/Aboutus" class="text-white hover:text-gray-300">Tentang Kami</a></li>
+                <li><a href="/Contactus" class="text-white hover:text-gray-300">Hubungi Kami</a></li>
             </ul>
         </div>
         <div class="w-full px-2 sm:w-1/2 md:w-1/4 mb-4">
-            <h3 class="text-lg font-semibold mb-2">Contact Us</h3>
+            <h3 class="text-lg font-semibold mb-2">Hubungi Kami</h3>
             <p>hmpconsultingph@gmail.com</p>
             <p>Jalan Gunung Sari No 25, lengkongsari Tasikmalaya, West Java, Indonesia 46111</p>
         </div>
         <div class="w-full px-2 sm:w-1/2 md:w-1/4 mb-4">
-            <h3 class="text-lg font-semibold mb-2">Store Open</h3>
+            <h3 class="text-lg font-semibold mb-2">Toko Buka</h3>
             <p>Mon to Sat : 10:00AM to 8:00PM</p>
             <p>Sunday : 8:00AM to 6:00PM</p>
         </div>

@@ -1,3 +1,7 @@
+body {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
 .text-logo {
     font-family: 'Old English Text MT', serif;
 }
@@ -31,7 +35,7 @@
 }
 
 .hover-effect:hover {
-    transform: scale(1.05);
+    transform: scale(1.05) !important;
 }
 
 .shadow-green {

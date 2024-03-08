@@ -8,6 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">     
         <link href="{{ asset('css/global.css') }}" rel="stylesheet">
         <link href="{{ asset('css/contactus.css') }}" rel="stylesheet">
     </head>
@@ -16,15 +19,15 @@
         <!-- SUB-HEADER -->
         <header class="bg-center bg-no-repeat bg-cover py-2 lg:py-4 bg-gray-200 bg-blend-multiply" style="background-image: url('/img/sub-header.png');" loading="lazy">
             <div class="mx-5 max-w-screen-xl text-center lg:text-left">
-                <p class="text-sm lg:text-lg font-normal text-gray-200 lg:text-outline tracking-widest">Home / Contact us</p>
+                <p class="text-sm lg:text-lg font-normal text-gray-200 lg:text-outline tracking-widest">Home / Hubungi kami</p>
             </div>
         </header>
         
         <!-- CONTACTS INFORMATION -->
         <section class="container mx-auto flex items-center justify-center py-12 lg:py-12 lg:pl-16 lg:pr-16">
             <div class="text-center">
-                <h2 class="mb-4 text-2xl font-extrabold tracking-tight leading-none gb-green-text md:text-3xl lg:text-3xl">HEAR FROM YOU</h2>
-                <p class="mb-8 text-xl font-bold text-gray-700">Get in touch</p>
+                <h2 class="mb-4 text-2xl font-extrabold tracking-tight leading-none gb-green-text md:text-3xl lg:text-3xl">DENGAR DARI KAMI</h2>
+                <p class="mb-8 text-xl font-bold text-gray-700">Hubungi Kami</p>
             </div>
         </section>
 
@@ -35,8 +38,10 @@
                     <div class="flex items-center justify-center w-12 h-12 text-white gb-green rounded-full">
                         <i class="fas fa-map-marker-alt text-2xl gb-text-white"></i>
                     </div>
-                    <h2 class="mb-2 text-gray-800 font-bold">Our Location</h2>
-                    <p class="text-gray-700">Jalan Gunung Sari No 25, lengkongsari Tasikmalaya, West Java, Indonesia 46111</p>
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <h2 class="mb-2 text-gray-800 font-bold">Lokasi Kami</h2>
+                        <p class="text-gray-700">Jalan Gunung Sari No 25, lengkongsari Tasikmalaya, West Java, Indonesia 46111</p>
+                    </div>
                 </div>
             </div>
 
@@ -45,9 +50,11 @@
                 <div class="text-center shadow p-6 h-full flex flex-col items-center justify-center">
                     <div class="flex items-center justify-center w-12 h-12 text-white gb-green rounded-full">
                         <i class="fas fa-map-marker-alt text-2xl gb-text-white"></i>
-                    </div>                    
-                    <h2 class="mb-2 text-gray-800 font-bold">Tel#</h2>
-                    <p class="text-gray-700">+62 813-2208-8480</p>
+                    </div>              
+                    <div data-aos="fade-up" data-aos-duration="1000">      
+                        <h2 class="mb-2 text-gray-800 font-bold">Tel#</h2>
+                        <p class="text-gray-700">+62 813-2208-8480</p>
+                    </div>
                 </div>
             </div>
 
@@ -56,9 +63,11 @@
                 <div class="gb-white text-center shadow p-6 h-full flex flex-col items-center justify-center">
                     <div class="flex items-center justify-center w-12 h-12 text-white gb-green rounded-full">
                         <i class="fas fa-map-marker-alt text-2xl gb-text-white"></i>
-                    </div>                      
-                    <h2 class="mb-2 text-gray-800 font-bold">Our Location</h2>
-                    <p class="text-gray-700">Berliner@gmail.com</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <h2 class="mb-2 text-gray-800 font-bold">Email Kami</h2>
+                        <p class="text-gray-700">Berliner@gmail.com</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -76,8 +85,8 @@
         <!-- CONTACT NOW -->
         <section class="container mx-auto flex items-center justify-center mt-12 lg:mt-16 lg:pl-16 lg:pr-16">
             <div class="text-center">
-                <h2 class="mb-4 text-2xl font-extrabold tracking-tight leading-none gb-green-text md:text-3xl lg:text-3xl">CONTACT NOW</h2>
-                <p class="mb-8 text-xl font-bold text-gray-700">Drop us message</p>
+                <h2 class="mb-4 text-2xl font-extrabold tracking-tight leading-none gb-green-text md:text-3xl lg:text-3xl">Kontak Sekarang</h2>
+                <p class="mb-8 text-xl font-bold text-gray-700">Kirimkan kami pesan</p>
             </div>
         </section>
 
@@ -128,7 +137,7 @@
                     </div>
                 </div>
                 <div class="md:flex md:items-center justify-center text-center">
-                    <div class="md:w-1/3">
+                    <div class="md:w-1/3" data-aos="zoom-out" data-aos-duration="1000">
                         <button class="shadow gb-green hover:bg-green-800 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">
                             Send
                         </button>
@@ -139,3 +148,7 @@
         @include('layouts.footer')
     </body>
 </html>
+
+<script>
+    AOS.init();
+</script>
