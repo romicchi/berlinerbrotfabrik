@@ -19,9 +19,9 @@
         <!-- Jumbotron -->
         <section class="bg-center bg-no-repeat bg-cover bg-gray-200 bg-blend-multiply" style="background-image: url('/img/jumbotron.png');" loading="lazy">
             <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-            <p class="mb-12 text-lg font-extrabold text-gray-200 text-outline lg:text-4xl sm:px-16 lg:px-48 md:text-4xl tracking-widest" data-aos="fade-in" data-aos-duration="1000">Pertama Kedai Roti dan <br> Kue Jerman di Tasikmalaya</p>
+            <p class="mb-12 text-lg font-extrabold text-gray-200 text-outline lg:text-4xl sm:px-16 lg:px-48 md:text-4xl tracking-widest" data-aos="fade-in" data-aos-duration="1000">Kedai Roti dan Kue Jerman <br> Pertama di Tasikmalaya</p>
                 <h1 class="mb-4 mt-5 text-4xl font-extrabold text-outline leading-none text-white md:text-5xl lg:text-6xl tracking-widest" data-aos="fade-up" data-aos-duration="1000">
-                Kami Membuat Hidup <br> Sehat dengan Kalori yang <br> Lebih Sedikit</h1>
+                Dengan kami, <br> anda bisa hidup sehat dengan <br> kalori yang lebih sedikit</h1>
             </div>
         </section>
 
