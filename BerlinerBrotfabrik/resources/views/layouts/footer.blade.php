@@ -38,8 +38,8 @@
         </div>
         <div class="w-full px-2 sm:w-1/2 md:w-1/4 mb-4">
             <h3 class="text-lg font-semibold mb-2">Jam Buka Toko</h3>
-            <p>Mon to Sat : 10:00AM to 8:00PM</p>
-            <p>Sunday : 8:00AM to 6:00PM</p>
+            <p>Senin - Sabtu: 10:00 pagi - 20:00 malam</p>
+            <p>Minggu: 08:00 pagi - 18:00 sore</p>
         </div>
     </div>
 

@@ -26,7 +26,7 @@
         <!-- CONTACTS INFORMATION -->
         <section class="container mx-auto flex items-center justify-center py-12 lg:py-12 lg:pl-16 lg:pr-16">
             <div class="text-center">
-                <h2 class="mb-4 text-2xl font-extrabold tracking-tight leading-none gb-green-text md:text-3xl lg:text-3xl">DENGAR DARI KAMI</h2>
+                <h2 class="mb-4 text-2xl font-extrabold tracking-tight leading-none gb-green-text md:text-3xl lg:text-3xl">Kami ingin mendengar pendapat anda</h2>
                 <p class="mb-8 text-xl font-bold text-gray-700">Hubungi Kami</p>
             </div>
         </section>
@@ -52,7 +52,7 @@
                         <i class="fas fa-map-marker-alt text-2xl gb-text-white"></i>
                     </div>              
                     <div data-aos="fade-up" data-aos-duration="1000">      
-                        <h2 class="mb-2 text-gray-800 font-bold">Tel#</h2>
+                        <h2 class="mb-2 text-gray-800 font-bold">Nomor Telpon</h2>
                         <p class="text-gray-700">+62 813-2208-8480</p>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
         <section class="container mx-auto flex items-center justify-center mt-12 lg:mt-16 lg:pl-16 lg:pr-16">
             <div class="text-center">
                 <h2 class="mb-4 text-2xl font-extrabold tracking-tight leading-none gb-green-text md:text-3xl lg:text-3xl">Kontak Sekarang</h2>
-                <p class="mb-8 text-xl font-bold text-gray-700">Kirimkan kami pesan</p>
+                <p class="mb-8 text-xl font-bold text-gray-700">Kirim pesan pada kami</p>
             </div>
         </section>
 

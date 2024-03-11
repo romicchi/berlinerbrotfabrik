@@ -85,7 +85,7 @@
         <!-- SOCIALS -->   
         <section class="gb-lgreen py-12">
             <div class="container mx-auto px-4 lg:px-16">
-            <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-white-text text-center md:text-3xl lg:text-4xl">Sosials</h2>
+            <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-white-text text-center md:text-3xl lg:text-4xl">Media Sosial Kami</h2>
             <div class="w-20 h-1 bg-gray-600 rounded-full mx-auto mt-6 mb-6"></div>
                 <div class="flex flex-wrap -mx-2">
                     <!-- Top row -->
@@ -130,7 +130,7 @@
                         <a href="https://wa.me/6281220000000" target="_blank">
                             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-75 flex flex-col items-center justify-center w-1/4 h-1/8">
                                 <i class="fab fa-whatsapp text-green-600"></i>
-                                <p class="mt-2 text-center">Kirim Pesan ke Kami di Whatsapp</p>
+                                <p class="mt-2 text-center">Kirim pesan ke kami melalui Whatsapp</p>
                             </div>
                         </a>
                     </div>
