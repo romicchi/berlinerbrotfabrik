@@ -37,8 +37,8 @@
             <div class="mb-4">
                 <label for="category" class="block text-gray-700">Category:</label>
                 <select id="category" name="category" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
-                    <option value="bread/pastry">Bread/Pastry</option>
-                    <option value="cake/dessert">Cake/Dessert</option>
+                    <option value="bread-pastry">Bread-Pastry</option>
+                    <option value="cake-dessert">Cake-Dessert</option>
                     <option value="drinks">Drinks</option>
                 </select>
             </div>
