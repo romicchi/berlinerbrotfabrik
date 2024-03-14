@@ -78,6 +78,13 @@
                 <img src="{{ asset('img/Rari.png') }}" alt="Team 3" class="rounded-lg hover-effect shadow-xl h-64 w-64 mx-auto" data-aos="fade-in" data-aos-duration="1000">
                 <h3 class="mt-4 text-xl font-semibold gb-green-text">Master Baker</h3>
                 <p class="font-medium text-gray-600">Rari Gusep</p>
+                <p class="text-sm font-normal text-gray-600">
+                SMK 1 Tasikmalaya, Diploma 1 (Hotel) / 6 months 
+                <br> Training in 5-Star Hotel Malaysia First German 
+                <br> Bakery Académie, Olpe, Germany / Akademi Bakery 
+                <br> Jerman Pertama, Olpe, Jerman 
+
+                </p>
             </div>
         </section>
 
