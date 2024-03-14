@@ -49,7 +49,7 @@
             <div class="w-full mx-10 my-10 sm:w-1/2 md:w-1/3 lg:mx-12 lg:my-12 lg:w-1/4 xl:w-1/4 mb-4 shadow-green-reverse">
                 <div class="text-center shadow p-6 h-full flex flex-col items-center justify-center">
                     <div class="flex items-center justify-center w-12 h-12 text-white gb-green rounded-full">
-                        <i class="fas fa-map-marker-alt text-2xl gb-text-white"></i>
+                        <i class="fas fa-phone-alt text-2xl gb-text-white"></i>
                     </div>              
                     <div data-aos="fade-up" data-aos-duration="1000">      
                         <h2 class="mb-2 text-gray-800 font-bold">Nomor Telpon</h2>
@@ -62,7 +62,7 @@
             <div class="w-full mx-10 my-10 sm:w-1/2 md:w-1/3 lg:mx-12 lg:my-12 lg:w-1/4 xl:w-1/4 mb-4 shadow-green-reverse">
                 <div class="gb-white text-center shadow p-6 h-full flex flex-col items-center justify-center">
                     <div class="flex items-center justify-center w-12 h-12 text-white gb-green rounded-full">
-                        <i class="fas fa-map-marker-alt text-2xl gb-text-white"></i>
+                        <i class="fas fa-envelope text-2xl gb-text-white"></i>
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1000">
                         <h2 class="mb-2 text-gray-800 font-bold">Email Kami</h2>
