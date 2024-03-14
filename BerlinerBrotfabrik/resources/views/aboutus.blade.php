@@ -33,14 +33,14 @@
                 <p class="mb-8 text-lg font-normal text-justify text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="lg:w-1/2 lg:pl-0 overflow-hidden mb-4 sm:mb-4 md:mb-8">
-                <img src="{{ asset('img/story.png') }}" alt="Story" class="transform transition duration-1000 hover:scale-110 object-scale-down w-full h-auto shadow-xl">
+                <img src="{{ asset('img/story.png') }}" alt="Story" class="transform transition duration-1000 hover:scale-110 object-scale-down w-full h-auto shadow-xl" data-aos="fade-in" data-aos-duration="1000">
             </div>
         </section>
 
         <!-- WHO WE ARE -->
         <section class="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-center pb-24 lg:pb-16 lg:pl-16 lg:pr-16 px-4 sm:px-0">
             <div class="lg:w-1/2 lg:pr-0 lg:mb-0 overflow-hidden mb-8 sm:mb-0">
-                <img src="{{ asset('img/who-we-are.png') }}" alt="Who" class="transform transition duration-1000 hover:scale-110 object-scale-down w-full h-auto shadow-xl">
+                <img src="{{ asset('img/who-we-are.png') }}" alt="Who" class="transform transition duration-1000 hover:scale-110 object-scale-down w-full h-auto shadow-xl" data-aos="fade-in" data-aos-duration="1000">
             </div>
             <div class="lg:w-1/2 lg:pl-16">
                 <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-green-text text-center sm:text-left md:text-3xl lg:text-4xl">Kami Siapa</h2>
@@ -58,7 +58,8 @@
 
         <section class="container mx-auto flex flex-col md:flex-row items-center justify-center pb-24 pt-24 md:pt-16 md:pl-16 md:pr-16">
             <div class="w-full md:w-1/3 px-4 md:pr-8 mb-8 md:mb-0 text-center">
-                <img src="{{ asset('img/Harald.png') }}" alt="Team 1" class="rounded-lg hover-effect shadow-xl h-64 w-64 mx-auto" data-aos="fade-in" data-aos-duration="1000">                <h3 class="mt-4 text-xl font-semibold gb-green-text">German Consultant</h3>
+                <img src="{{ asset('img/Harald.png') }}" alt="Team 1" class="rounded-lg hover-effect shadow-xl h-64 w-64 mx-auto" data-aos="fade-in" data-aos-duration="1000">                
+                <h3 class="mt-4 text-xl font-semibold gb-green-text">German Consultant</h3>
                 <p class="font-medium text-gray-600">Harald Fuechsel</p>
                 <p class="text-sm font-normal text-gray-600">Dipl.-Eng., Business Lawyer, German Senior Expert, Senator h.c. Education and Technology</p>
             </div>
