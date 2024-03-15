@@ -14,3 +14,7 @@
 .footer-top-area::after {
     background-image: url("../img/bg-patern2.png");
 }
+
+.swiper-pagination-bullet {
+    background: #1D571E !important;
+}

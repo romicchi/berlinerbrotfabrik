@@ -49,9 +49,22 @@
             </div>
         </section>
 
-        <!-- OUR TEAM -->
+        <!-- OUR MANAGEMENT -->
         <section class="container mx-auto text-center pt-24 lg:pt-16">
             <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-green-text md:text-3xl lg:text-4xl">Tim Kami</h2>
+            <h3 class="font-bold text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+            <div class="w-20 h-1 gb-lgreen rounded-full mx-auto mt-6 mb-6"></div>
+        </section>
+
+        <section class="container mx-auto flex flex-col md:flex-row items-center justify-center pb-24 pt-24 md:pt-16 md:pl-16 md:pr-16">
+            <div class="flex justify-center items-center w-full">
+                <img src="{{ asset('img/management.png') }}" alt="Team 1" class="rounded-lg hover-effect shadow-xl h-auto md:h-96 w-11/12 lg:w-1/2 md:w-1/8 sm:w-full mx-4 md:mx-auto" data-aos="fade-in" data-aos-duration="1000">
+            </div>
+        </section>
+
+        <!-- OUR TEAM -->
+        <section class="container mx-auto text-center pt-24 lg:pt-16">
+            <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-green-text md:text-3xl lg:text-4xl">Manajemen Kami</h2>
             <h3 class="font-bold text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
             <div class="w-20 h-1 gb-lgreen rounded-full mx-auto mt-6 mb-6"></div>
         </section>
@@ -61,30 +74,26 @@
                 <img src="{{ asset('img/Harald.png') }}" alt="Team 1" class="rounded-lg hover-effect shadow-xl h-64 w-64 mx-auto" data-aos="fade-in" data-aos-duration="1000">                
                 <h3 class="mt-4 text-xl font-semibold gb-green-text">German Consultant</h3>
                 <p class="font-medium text-gray-600">Harald Fuechsel</p>
-                <p class="text-sm font-normal text-gray-600">Dipl.-Eng., Business Lawyer, German Senior Expert, Senator h.c. Education and Technology</p>
+                <p class="text-sm font-normal text-gray-600"><br>Dipl.-Eng. / Business Lawyer / Dipl.-Eng. / Senator h.c. Education and Technology / Senator h.c / Senior Expert, Senior Expert Service, Germany</p>
             </div>
             <div class="w-full md:w-1/3 px-4 md:pr-8 mb-8 md:mb-0 text-center">
-                <img src="{{ asset('img/Hena.png') }}" alt="Team 2" class="rounded-lg hover-effect shadow-xl h-64 w-64 mx-auto" data-aos="fade-in" data-aos-duration="1000">
-                <h3 class="mt-4 text-xl font-semibold gb-green-text">Owner</h3>
+                <img src="{{ asset('img/Hena.png') }}" alt="Team 2" class="rounded-lg hover-effect shadow-xl h-64 w-56 mx-auto" data-aos="fade-in" data-aos-duration="1000">
+                <h3 class="mt-4 text-xl font-semibold gb-green-text">Owner and Bakery Manager </h3>
                 <p class="font-medium text-gray-600">RD Hena Mulianakusumah</p>
                 <p class="text-sm font-normal text-gray-600">
-                    <br>Study in Germany, Regional Economic Development for SME and Start-Up (InWent),
-                    <br>Education in First German Bakery Academy, Olpe,
-                    <br>Training in Bakery Mohr in Frechen / Cologne,
-                    <br>Training in Gradel Bakery and Pastry, Dresden,
-                    <br>Involvement in Development of Bio- and Gluten free Bakery Products in the team of Dr. Quendt family, Freital / Dresden,
+                    <br>Bachelor University Degree “Foreign Languages”,
+                    <br>Study at “InWent” Germany,
+                    <br>for Small and Medium Companies + Start-Up,
+                    <br>First German Bakery Académie, Olpe, Germany,
                 </p>
             </div>
             <div class="w-full md:w-1/3 px-4 md:pr-8 mb-8 md:mb-0 text-center">
-                <img src="{{ asset('img/Rari.png') }}" alt="Team 3" class="rounded-lg hover-effect shadow-xl h-64 w-64 mx-auto" data-aos="fade-in" data-aos-duration="1000">
+                <img src="{{ asset('img/Rari.png') }}" alt="Team 3" class="rounded-lg hover-effect shadow-xl h-64 w-56 mx-auto" data-aos="fade-in" data-aos-duration="1000">
                 <h3 class="mt-4 text-xl font-semibold gb-green-text">Master Baker</h3>
                 <p class="font-medium text-gray-600">Rari Gusep</p>
                 <p class="text-sm font-normal text-gray-600">
-                SMK 1 Tasikmalaya, Diploma 1 (Hotel) / 6 months 
-                <br> Training in 5-Star Hotel Malaysia First German 
-                <br> Bakery Académie, Olpe, Germany / Akademi Bakery 
-                <br> Jerman Pertama, Olpe, Jerman 
-
+                <br>SMK 1 Tasikmalaya, Diploma 1 (Hotel) / 6 months Training in 5-Star Hotel Malaysia
+                <br> First German Bakery Académie, Olpe, Germany
                 </p>
             </div>
         </section>
