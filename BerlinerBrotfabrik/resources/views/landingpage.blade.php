@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,9 +19,9 @@
         <!-- Jumbotron -->
         <section class="bg-center bg-no-repeat bg-cover bg-gray-200 bg-blend-multiply" style="background-image: url('/img/jumbotron.png');" loading="lazy">
             <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-            <p class="mb-12 text-lg font-extrabold text-gray-200 text-outline lg:text-4xl sm:px-16 lg:px-48 md:text-4xl tracking-widest" data-aos="fade-in" data-aos-duration="1000">Kedai Roti dan Kue Jerman <br> Pertama di Tasikmalaya</p>
+            <p class="mb-12 text-lg font-extrabold text-gray-200 text-outline lg:text-4xl sm:px-16 lg:px-48 md:text-4xl tracking-widest" data-aos="fade-in" data-aos-duration="1000">{!! __('messages.First German Bakery') !!}</p>
                 <h1 class="mb-4 mt-5 text-4xl font-extrabold text-outline leading-none text-white md:text-5xl lg:text-6xl tracking-widest" data-aos="fade-up" data-aos-duration="1000">
-                Dengan kami, <br> anda bisa hidup sehat dengan <br> kalori yang lebih sedikit</h1>
+                {!! __('messages.We Make Life Healthy') !!}</h1>
             </div>
         </section>
 
@@ -31,9 +31,15 @@
             <img src="{{ asset('img/about.png') }}" alt="Bakery" data-aos="fade-up" data-aos-duration="1500" class="rounded-lg shadow-green hover-effect z-10">
         </div>
             <div class="lg:w-1/2 text-center" data-aos="fade-in" data-aos-duration="1000">
-                <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-none gb-green-text md:text-4xl lg:text-5xl">Kenali Kami</h2>
-                <p class="mb-8 text-lg font-normal text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a href="#" class="inline-block px-8 py-3 text-sm font-semibold leading-relaxed text-gray-800 bg-gray-200 rounded hover:bg-green-900 hover:text-gray-200" data-aos="zoom-out" data-aos-duration="1000">Cerita Kami</a>
+                <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-none gb-green-text md:text-4xl lg:text-5xl">
+                    {!! __('messages.Get To Know Us') !!}
+                </h2>
+                <p class="mb-8 text-lg font-normal text-gray-600">
+                    {!! __('messages.Lorem') !!}
+                </p>
+                <a href="#" class="inline-block px-8 py-3 text-sm font-semibold leading-relaxed text-gray-800 bg-gray-200 rounded hover:bg-green-900 hover:text-gray-200" data-aos="zoom-out" data-aos-duration="1000">
+                    {!! __('messages.Our Story') !!}
+                </a>
             </div>          
         </section>
 
@@ -43,29 +49,45 @@
                 <div class="flex items-center justify-center w-16 h-16 text-white gb-green rounded-full">
                     <i class="fas fa-star fa-2x icon-hover"></i>
                 </div>
-                <h3 class="mt-4 text-xl font-semibold gb-green-text">Kualitas yang Konsisten</h3>
-                <p class="mt-2 text-sm font-normal text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3 class="mt-4 text-xl font-semibold gb-green-text">
+                    {!! __('messages.Consistent Quality') !!}
+                </h3>
+                <p class="mt-2 text-sm font-normal text-gray-600">
+                    {!! __('messages.Lorem') !!}
+                </p>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/4 px-4 flex flex-col items-center text-center mb-8 md:mb-0">
                 <div class="flex items-center justify-center w-16 h-16 text-white gb-green rounded-full">
                     <i class="fas fa-leaf fa-2x icon-hover"></i>
                 </div>
-                <h3 class="mt-4 text-xl font-semibold gb-green-text">Segar</h3>
-                <p class="mt-2 text-sm font-normal text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3 class="mt-4 text-xl font-semibold gb-green-text">
+                    {!! __('messages.Fresh') !!}
+                </h3>
+                <p class="mt-2 text-sm font-normal text-gray-600">
+                    {!! __('messages.Lorem') !!}
+                </p>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/4 px-4 flex flex-col items-center text-center mb-8 md:mb-0">
                 <div class="flex items-center justify-center w-16 h-16 text-white gb-green rounded-full">
                     <i class="fas fa-utensils fa-2x icon-hover"></i>
                 </div>
-                <h3 class="mt-4 text-xl font-semibold gb-green-text">Enak</h3>
-                <p class="mt-2 text-sm font-normal text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3 class="mt-4 text-xl font-semibold gb-green-text">
+                    {{ __('messages.Sweet') }}
+                </h3>
+                <p class="mt-2 text-sm font-normal text-gray-600">
+                    {!! __('messages.Lorem') !!}
+                </p>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/4 px-4 flex flex-col items-center text-center">
                 <div class="flex items-center justify-center w-16 h-16 text-white gb-green rounded-full">
                     <i class="fas fa-heart fa-2x icon-hover"></i>
                 </div>
-                <h3 class="mt-4 text-xl font-semibold gb-green-text">Kalori yang Sedikit</h3>
-                <p class="mt-2 text-sm font-normal text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3 class="mt-4 text-xl font-semibold gb-green-text">
+                    {!! __('messages.Low Calorie') !!}
+                </h3>
+                <p class="mt-2 text-sm font-normal text-gray-600">
+                    {!! __('messages.Lorem') !!}
+                </p>
             </div>
         </div>
 
@@ -73,9 +95,15 @@
         <div class="gb-lgreen bg-blend-multiply bg-center bg-no-repeat">
             <section class="container mx-auto flex flex-col lg:flex-row items-center justify-center py-32 lg:py-40 w-full">
                 <div class="lg:w-1/2 lg:pr-16 mb-8 text-center lg:mb-0" data-aos="fade-in" data-aos-duration="1000">
-                    <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-none gb-lgreen-text md:text-4xl lg:text-5xl">Hal-hal yang Kami Buat</h2>
-                    <p class="mb-8 text-lg font-normal gb-lgreen-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <a href="#" class="inline-block px-8 py-3 text-sm font-semibold leading-relaxed text-gray-800 bg-gray-200 rounded hover:bg-green-900 hover:text-gray-200" data-aos="zoom-out" data-aos-duration="1000">Menu Lengkap</a>
+                    <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-none gb-lgreen-text md:text-4xl lg:text-5xl">
+                        {!! __('messages.Things We Make') !!}
+                    </h2>
+                    <p class="mb-8 text-lg font-normal gb-lgreen-text">
+                        {!! __('messages.Lorem') !!}
+                    </p>
+                    <a href="#" class="inline-block px-8 py-3 text-sm font-semibold leading-relaxed text-gray-800 bg-gray-200 rounded hover:bg-green-900 hover:text-gray-200" data-aos="zoom-out" data-aos-duration="1000">
+                        {!! __('messages.Full Menu') !!}
+                    </a>
                 </div>
                 <div class="lg:w-1/2 flex flex-row justify-center items-center">
                     <div class="mr-8 relative mb-12 hover-effect" data-aos="fade-up" data-aos-duration="1000">
@@ -106,3 +134,8 @@
 <script>
     AOS.init();
 </script>
+<script>
+        document.getElementById('langForm').addEventListener('change', function() {
+            this.submit();
+        });
+    </script>

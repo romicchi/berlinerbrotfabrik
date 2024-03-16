@@ -1,8 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Session;
 
 use App\Http\Controllers\MessageController;
+use App\Http\Controllers\LanguageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +16,8 @@ use App\Http\Controllers\MessageController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+Route::post('lang/{lang}', [LanguageController::class, 'switchLang'])->name('lang.switch');
 
 Route::get('/', function () {
     return view('landingpage');

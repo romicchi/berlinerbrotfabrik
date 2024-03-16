@@ -1,4 +1,9 @@
-<!-- Header with the Logo at the center -->
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 <header class="gb-green text-white">
     <div class="container mx-auto flex justify-center items-center">
         <a href="/">
@@ -8,8 +13,16 @@
 </header>
 <header class="gb-white gb-green-text py-7">
     <div class="container text-sm sm:text-xl mx-auto flex justify-center items-center">
-        <a href="/Menu" class="{{ Request::is('/Menu') ? 'underline' : '' }} mx-6">Menu</a>
-        <a href="/Aboutus" class="{{ Request::is('Aboutus') ? 'underline' : '' }} mx-6 text-center">Tentang Kami</a>
-        <a href="/Contactus" class="{{ Request::is('Contactus') ? 'underline' : '' }} mx-6 text-center">Hubungi Kami</a>
+        <a href="/Menu" class="{{ Request::is('/Menu') ? 'underline' : '' }} mx-6">{{ __('messages.Menu') }}</a>
+        <a href="/Aboutus" class="{{ Request::is('Aboutus') ? 'underline' : '' }} mx-6 text-center">{{ __('messages.About Us') }}</a>
+        <a href="/Contactus" class="{{ Request::is('Contactus') ? 'underline' : '' }} mx-6 text-center">{{ __('messages.Contact Us') }}</a>
+        <form id="langForm" action="{{ route('lang.switch', app()->getLocale()) }}" method="POST">
+    @csrf
+    <select name="lang" onchange="this.form.submit()">
+        <option value="en" {{ app()->getLocale() == 'en' ? 'selected' : '' }}>English</option>
+        <option value="id" {{ app()->getLocale() == 'id' ? 'selected' : '' }}>Indonesia</option>
+    </select>
+</form>
     </div>
 </header>
+</html>

@@ -21,16 +21,20 @@
         <!-- SUB-HEADER -->
         <header class="bg-center bg-no-repeat bg-cover py-2 lg:py-4 bg-gray-200 bg-blend-multiply" style="background-image: url('/img/sub-header.png');" loading="lazy">
             <div class="mx-5 max-w-screen-xl text-center lg:text-left">
-                <p class="text-sm lg:text-lg font-normal text-gray-200 lg:text-outline tracking-widest">Home / Tentang kami</p>
+                <p class="text-sm lg:text-lg font-normal text-gray-200 lg:text-outline tracking-widest">Home / {!! __('messages.About Us')!!}</p>
             </div>
         </header>
 
         <!-- OUR STORY -->
         <section class="container mx-auto flex flex-col lg:flex-row items-center justify-center pt-24 lg:pt-16 lg:pl-16 lg:pr-16 px-4 sm:px-0">
             <div class="lg:w-1/2 lg:pr-16 mb-8 lg:mb-0">
-                <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-green-text text-center sm:text-left md:text-3xl lg:text-4xl">Cerita Kami</h2>                
+                <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-green-text text-center sm:text-left md:text-3xl lg:text-4xl">
+                    {!! __('messages.Our Story') !!}
+                </h2>                
                 <div class="w-20 h-1 gb-lgreen rounded-full mb-6 mx-auto sm:mx-0"></div>
-                <p class="mb-8 text-lg font-normal text-justify text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="mb-8 text-lg font-normal text-justify text-gray-600">
+                    {!! __('messages.Lorem') !!}
+                </p>
             </div>
             <div class="lg:w-1/2 lg:pl-0 overflow-hidden mb-4 sm:mb-4 md:mb-8">
                 <img src="{{ asset('img/story.png') }}" alt="Story" class="transform transition duration-1000 hover:scale-110 object-scale-down w-full h-auto shadow-xl" data-aos="fade-in" data-aos-duration="1000">
@@ -43,16 +47,24 @@
                 <img src="{{ asset('img/who-we-are.png') }}" alt="Who" class="transform transition duration-1000 hover:scale-110 object-scale-down w-full h-auto shadow-xl" data-aos="fade-in" data-aos-duration="1000">
             </div>
             <div class="lg:w-1/2 lg:pl-16">
-                <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-green-text text-center sm:text-left md:text-3xl lg:text-4xl">Kami Siapa</h2>
+                <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-green-text text-center sm:text-left md:text-3xl lg:text-4xl">
+                    {!! __('messages.Who We Are') !!}
+                </h2>
                 <div class="w-20 h-1 gb-lgreen rounded-full mb-6 mx-auto sm:mx-0"></div>
-                <p class="mb-8 text-lg font-normal text-justify text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="mb-8 text-lg font-normal text-justify text-gray-600">
+                    {!! __('messages.Lorem') !!}
+                </p>
             </div>
         </section>
 
         <!-- OUR MANAGEMENT -->
         <section class="container mx-auto text-center pt-24 lg:pt-16">
-            <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-green-text md:text-3xl lg:text-4xl">Tim Kami</h2>
-            <h3 class="font-bold text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+            <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-green-text md:text-3xl lg:text-4xl">
+                {!! __('messages.Our Team') !!}
+            </h2>
+            <h3 class="font-bold text-gray-600">
+                {!! __('messages.Lorem') !!}
+            </h3>
             <div class="w-20 h-1 gb-lgreen rounded-full mx-auto mt-6 mb-6"></div>
         </section>
 
@@ -64,36 +76,44 @@
 
         <!-- OUR TEAM -->
         <section class="container mx-auto text-center pt-24 lg:pt-16">
-            <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-green-text md:text-3xl lg:text-4xl">Manajemen Kami</h2>
-            <h3 class="font-bold text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+            <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-green-text md:text-3xl lg:text-4xl">
+                {!! __('messages.Our Management') !!}
+            </h2>
+            <h3 class="font-bold text-gray-600">
+                {!! __('messages.Lorem') !!}
+            </h3>
             <div class="w-20 h-1 gb-lgreen rounded-full mx-auto mt-6 mb-6"></div>
         </section>
 
         <section class="container mx-auto flex flex-col md:flex-row items-center justify-center pb-24 pt-24 md:pt-16 md:pl-16 md:pr-16">
             <div class="w-full md:w-1/3 px-4 md:pr-8 mb-8 md:mb-0 text-center">
                 <img src="{{ asset('img/Harald.png') }}" alt="Team 1" class="rounded-lg hover-effect shadow-xl h-64 w-64 mx-auto" data-aos="fade-in" data-aos-duration="1000">                
-                <h3 class="mt-4 text-xl font-semibold gb-green-text">German Consultant</h3>
+                <h3 class="mt-4 text-xl font-semibold gb-green-text">
+                    {!! __('messages.German Consultant') !!}
+                </h3>
                 <p class="font-medium text-gray-600">Harald Fuechsel</p>
-                <p class="text-sm font-normal text-gray-600"><br>Dipl.-Eng. / Business Lawyer / Dipl.-Eng. / Senator h.c. Education and Technology / Senator h.c / Senior Expert, Senior Expert Service, Germany</p>
+                <p class="text-sm font-normal text-gray-600">
+                    <br>{!! __('messages.Harald Description') !!}
+                </p>
             </div>
             <div class="w-full md:w-1/3 px-4 md:pr-8 mb-8 md:mb-0 text-center">
                 <img src="{{ asset('img/Hena.png') }}" alt="Team 2" class="rounded-lg hover-effect shadow-xl h-64 w-56 mx-auto" data-aos="fade-in" data-aos-duration="1000">
-                <h3 class="mt-4 text-xl font-semibold gb-green-text">Owner and Bakery Manager </h3>
+                <h3 class="mt-4 text-xl font-semibold gb-green-text">
+                    {!! __('messages.Owner and Bakery Manager') !!}
+                </h3>
                 <p class="font-medium text-gray-600">RD Hena Mulianakusumah</p>
                 <p class="text-sm font-normal text-gray-600">
-                    <br>Bachelor University Degree “Foreign Languages”,
-                    <br>Study at “InWent” Germany,
-                    <br>for Small and Medium Companies + Start-Up,
-                    <br>First German Bakery Académie, Olpe, Germany,
+                    <br>{!! __('messages.Hena Description') !!}
                 </p>
             </div>
             <div class="w-full md:w-1/3 px-4 md:pr-8 mb-8 md:mb-0 text-center">
                 <img src="{{ asset('img/Rari.png') }}" alt="Team 3" class="rounded-lg hover-effect shadow-xl h-64 w-56 mx-auto" data-aos="fade-in" data-aos-duration="1000">
-                <h3 class="mt-4 text-xl font-semibold gb-green-text">Master Baker</h3>
+                <h3 class="mt-4 text-xl font-semibold gb-green-text">
+                    {!! __('messages.Master Baker') !!}
+                </h3>
                 <p class="font-medium text-gray-600">Rari Gusep</p>
                 <p class="text-sm font-normal text-gray-600">
-                <br>SMK 1 Tasikmalaya, Diploma 1 (Hotel) / 6 months Training in 5-Star Hotel Malaysia
-                <br> First German Bakery Académie, Olpe, Germany
+                <br>{!! __('messages.Rarigusep Description') !!}
                 </p>
             </div>
         </section>
@@ -101,7 +121,9 @@
         <!-- SOCIALS -->   
         <section class="gb-lgreen py-12">
             <div class="container mx-auto px-4 lg:px-16">
-            <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-white-text text-center md:text-3xl lg:text-4xl">Media Sosial Kami</h2>
+            <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-white-text text-center md:text-3xl lg:text-4xl">
+                {!! __('messages.Socials') !!}
+            </h2>
             <div class="w-20 h-1 bg-gray-600 rounded-full mx-auto mt-6 mb-6"></div>
                 <div class="flex flex-wrap -mx-2">
                     <!-- Top row -->
@@ -112,7 +134,9 @@
                         <a href="https://www.facebook.com/profile.php?id=100058154600282" target="_blank">
                             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-75 flex flex-col items-center justify-center w-1/4 h-1/8">
                                 <i class="fab fa-facebook-f text-blue-600"></i>
-                                <p class="mt-2 text-center">Ikuti Kami di Facebook</p>
+                                <p class="mt-2 text-center">
+                                    {!! __('messages.Follow us on Facebook') !!}
+                                </p>
                             </div>
                         </a>
                     </div>
@@ -123,7 +147,9 @@
                         <a href="https://www.instagram.com/berlinerbrotfabrik/?hl=en" target="_blank">
                             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-75 flex flex-col items-center justify-center w-1/4 h-1/8">
                                 <i class="fab fa-instagram text-purple-600"></i>
-                                <p class="mt-2 text-center">Ikuti Kami di Instagram</p>
+                                <p class="mt-2 text-center">
+                                    {!! __('messages.Follow us on Instagram') !!}
+                                </p>
                             </div>
                         </a>
                     </div>
@@ -135,7 +161,9 @@
                         <a href="https://www.tiktok.com/@berlinerbrotfabrik" target="_blank">
                             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-75 flex flex-col items-center justify-center w-1/4 h-1/8">
                                 <i class="fab fa-tiktok text-black"></i>
-                                <p class="mt-2 text-center">Ikuti Kami di Tiktok</p>
+                                <p class="mt-2 text-center">
+                                    {!! __('messages.Follow us on TikTok') !!}
+                                </p>
                             </div>
                         </a>
                     </div>
@@ -146,7 +174,9 @@
                         <a href="https://wa.me/6281220000000" target="_blank">
                             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-75 flex flex-col items-center justify-center w-1/4 h-1/8">
                                 <i class="fab fa-whatsapp text-green-600"></i>
-                                <p class="mt-2 text-center">Kirim pesan ke kami melalui Whatsapp</p>
+                                <p class="mt-2 text-center">
+                                    {!! __('messages.Follow us on WhatsApp') !!}
+                                </p>
                             </div>
                         </a>
                     </div>
@@ -156,8 +186,12 @@
 
         <!-- TESTIMONIALS -->
         <section class="container gb-white mx-auto text-center pt-24 lg:pt-16">
-            <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-green-text md:text-3xl lg:text-4xl">Testimoni</h2>
-            <h3 class="text-1xl font-normal py-5 text-gray-600 lg:text-2xl">Apa Kata Pelanggan Kami</h3>
+            <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-green-text md:text-3xl lg:text-4xl">
+                {!! __('messages.Testimony') !!}
+            </h2>
+            <h3 class="text-1xl font-normal py-5 text-gray-600 lg:text-2xl">
+                {!! __('messages.What Our Costumers Say') !!}
+            </h3>
             <div class="w-20 h-1 gb-lgreen rounded-full mx-auto mt-6 mb-6"></div>
             <div class="swiper-container">
                 <div class="swiper-wrapper" data-aos="fade-in" data-aos-duration="1000">

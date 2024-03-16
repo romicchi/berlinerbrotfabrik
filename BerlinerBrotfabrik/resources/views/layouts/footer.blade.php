@@ -21,25 +21,43 @@
     <div class="container mx-auto flex flex-wrap justify-between items-start mt-10">
         <div class="w-full px-2 sm:w-1/2 md:w-1/4 mb-4">
             <p class="text-3xl font-bold text-logo">Berliner Brotfabrik</p>
-            <p class="mb-6 mt-6">Lorem ipsum is not simply random text roots to popular pular belief It has roots in a piece of classic</p>
+            <p class="mb-6 mt-6">
+                {!! __('messages.Lorem') !!}
+            </p>
         </div>
         <div class="w-full px-2 sm:w-1/2 md:w-1/4 mb-4">
-            <h3 class="text-lg font-semibold mb-2">Informasi</h3>
+            <h3 class="text-lg font-semibold mb-2">
+                {!! __('messages.Information') !!}
+            </h3>
             <ul class="list-none">
-                <li><a href="/Menu" class="text-white hover:text-gray-300">Menu</a></li>
-                <li><a href="/Aboutus" class="text-white hover:text-gray-300">Tentang Kami</a></li>
-                <li><a href="/Contactus" class="text-white hover:text-gray-300">Hubungi Kami</a></li>
+                <li><a href="/Menu" class="text-white hover:text-gray-300">
+                    {!! __('messages.Menu') !!}
+                </a></li>
+                <li><a href="/Aboutus" class="text-white hover:text-gray-300">
+                    {!! __('messages.About Us') !!}
+                </a></li>
+                <li><a href="/Contactus" class="text-white hover:text-gray-300">
+                    {!! __('messages.Contact Us') !!}
+                </a></li>
             </ul>
         </div>
         <div class="w-full px-2 sm:w-1/2 md:w-1/4 mb-4">
-            <h3 class="text-lg font-semibold mb-2">Hubungi Kami</h3>
+            <h3 class="text-lg font-semibold mb-2">
+                {!! __('messages.Contact Us') !!}
+            </h3>
             <p>hmpconsultingph@gmail.com</p>
             <p>Jalan Gunung Sari No 25, lengkongsari Tasikmalaya, West Java, Indonesia 46111</p>
         </div>
         <div class="w-full px-2 sm:w-1/2 md:w-1/4 mb-4">
-            <h3 class="text-lg font-semibold mb-2">Jam Buka Toko</h3>
-            <p>Senin - Sabtu: 10:00 pagi - 20:00 malam</p>
-            <p>Minggu: 08:00 pagi - 18:00 sore</p>
+            <h3 class="text-lg font-semibold mb-2">
+                {!! __('messages.Store Open') !!}
+            </h3>
+            <p>
+                {!! __('messages.Monday - Saturday') !!}
+            </p>
+            <p>
+                {!! __('messages.Sunday') !!}
+            </p>
         </div>
     </div>
 

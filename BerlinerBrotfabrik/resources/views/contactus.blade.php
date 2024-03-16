@@ -19,15 +19,19 @@
         <!-- SUB-HEADER -->
         <header class="bg-center bg-no-repeat bg-cover py-2 lg:py-4 bg-gray-200 bg-blend-multiply" style="background-image: url('/img/sub-header.png');" loading="lazy">
             <div class="mx-5 max-w-screen-xl text-center lg:text-left">
-                <p class="text-sm lg:text-lg font-normal text-gray-200 lg:text-outline tracking-widest">Home / Hubungi kami</p>
+                <p class="text-sm lg:text-lg font-normal text-gray-200 lg:text-outline tracking-widest">Home / {!! __('messages.Contact Us')!!}</p>
             </div>
         </header>
         
         <!-- CONTACTS INFORMATION -->
         <section class="container mx-auto flex items-center justify-center py-12 lg:py-12 lg:pl-16 lg:pr-16">
             <div class="text-center">
-                <h2 class="mb-4 text-2xl font-extrabold tracking-tight leading-none gb-green-text md:text-3xl lg:text-3xl">Kami ingin mendengar pendapat anda</h2>
-                <p class="mb-8 text-xl font-bold text-gray-700">Hubungi Kami</p>
+                <h2 class="mb-4 text-2xl font-extrabold tracking-tight leading-none gb-green-text md:text-3xl lg:text-3xl">
+                    {!! __('messages.WE WANT TO HEAR FROM YOU') !!}
+                </h2>
+                <p class="mb-8 text-xl font-bold text-gray-700">
+                    {!! __('messages.Contact Us') !!}
+                </p>
             </div>
         </section>
 
@@ -39,7 +43,9 @@
                         <i class="fas fa-map-marker-alt text-2xl gb-text-white"></i>
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1000">
-                        <h2 class="mb-2 text-gray-800 font-bold">Lokasi Kami</h2>
+                        <h2 class="mb-2 text-gray-800 font-bold">
+                            {!! __('messages.Our Location') !!}
+                        </h2>
                         <p class="text-gray-700">Jalan Gunung Sari No 25, lengkongsari Tasikmalaya, West Java, Indonesia 46111</p>
                     </div>
                 </div>
@@ -52,7 +58,9 @@
                         <i class="fas fa-phone-alt text-2xl gb-text-white"></i>
                     </div>              
                     <div data-aos="fade-up" data-aos-duration="1000">      
-                        <h2 class="mb-2 text-gray-800 font-bold">Nomor Telpon</h2>
+                        <h2 class="mb-2 text-gray-800 font-bold">
+                            {!! __('messages.Phone Number') !!}
+                        </h2>
                         <p class="text-gray-700">+62 813-2208-8480</p>
                     </div>
                 </div>
@@ -65,7 +73,9 @@
                         <i class="fas fa-envelope text-2xl gb-text-white"></i>
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1000">
-                        <h2 class="mb-2 text-gray-800 font-bold">Email Kami</h2>
+                        <h2 class="mb-2 text-gray-800 font-bold">
+                            {!! __('messages.Email Us') !!}
+                        </h2>
                         <p class="text-gray-700">Berliner@gmail.com</p>
                     </div>
                 </div>
@@ -85,8 +95,12 @@
         <!-- CONTACT NOW -->
         <section class="container mx-auto flex items-center justify-center mt-12 lg:mt-16 lg:pl-16 lg:pr-16">
             <div class="text-center">
-                <h2 class="mb-4 text-2xl font-extrabold tracking-tight leading-none gb-green-text md:text-3xl lg:text-3xl">Kontak Sekarang</h2>
-                <p class="mb-8 text-xl font-bold text-gray-700">Kirim pesan pada kami</p>
+                <h2 class="mb-4 text-2xl font-extrabold tracking-tight leading-none gb-green-text md:text-3xl lg:text-3xl">
+                    {!! __('messages.CONTACT NOW') !!}
+                </h2>
+                <p class="mb-8 text-xl font-bold text-gray-700">
+                    {!! __('messages.Drop us a message') !!}
+                </p>
             </div>
         </section>
 
