@@ -22,7 +22,7 @@
         <div class="w-full px-2 sm:w-1/2 md:w-1/4 mb-4">
             <p class="text-3xl font-bold text-logo">Berliner Brotfabrik</p>
             <p class="mb-6 mt-6">
-                {!! __('messages.Lorem') !!}
+                {!! __('messages.Berliner Footer Description') !!}
             </p>
         </div>
         <div class="w-full px-2 sm:w-1/2 md:w-1/4 mb-4">

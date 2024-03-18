@@ -35,7 +35,7 @@
                     {!! __('messages.Get To Know Us') !!}
                 </h2>
                 <p class="mb-8 text-lg font-normal text-gray-600">
-                    {!! __('messages.Lorem') !!}
+                    {!! __('messages.Get to Know Us Description') !!}
                 </p>
                 <a href="#" class="inline-block px-8 py-3 text-sm font-semibold leading-relaxed text-gray-800 bg-gray-200 rounded hover:bg-green-900 hover:text-gray-200" data-aos="zoom-out" data-aos-duration="1000">
                     {!! __('messages.Our Story') !!}
@@ -53,7 +53,7 @@
                     {!! __('messages.Consistent Quality') !!}
                 </h3>
                 <p class="mt-2 text-sm font-normal text-gray-600">
-                    {!! __('messages.Lorem') !!}
+                    {!! __('messages.Quality Description') !!}
                 </p>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/4 px-4 flex flex-col items-center text-center mb-8 md:mb-0">
@@ -64,7 +64,7 @@
                     {!! __('messages.Fresh') !!}
                 </h3>
                 <p class="mt-2 text-sm font-normal text-gray-600">
-                    {!! __('messages.Lorem') !!}
+                    {!! __('messages.Fresh Description') !!}
                 </p>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/4 px-4 flex flex-col items-center text-center mb-8 md:mb-0">
@@ -75,7 +75,7 @@
                     {{ __('messages.Sweet') }}
                 </h3>
                 <p class="mt-2 text-sm font-normal text-gray-600">
-                    {!! __('messages.Lorem') !!}
+                    {!! __('messages.Sweet Description') !!}
                 </p>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/4 px-4 flex flex-col items-center text-center">
@@ -86,7 +86,7 @@
                     {!! __('messages.Low Calorie') !!}
                 </h3>
                 <p class="mt-2 text-sm font-normal text-gray-600">
-                    {!! __('messages.Lorem') !!}
+                    {!! __('messages.Calorie Description') !!}
                 </p>
             </div>
         </div>
@@ -99,7 +99,7 @@
                         {!! __('messages.Things We Make') !!}
                     </h2>
                     <p class="mb-8 text-lg font-normal gb-lgreen-text">
-                        {!! __('messages.Lorem') !!}
+                        {!! __('messages.Things We Make Description') !!}
                     </p>
                     <a href="#" class="inline-block px-8 py-3 text-sm font-semibold leading-relaxed text-gray-800 bg-gray-200 rounded hover:bg-green-900 hover:text-gray-200" data-aos="zoom-out" data-aos-duration="1000">
                         {!! __('messages.Full Menu') !!}

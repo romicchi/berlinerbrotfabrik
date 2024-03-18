@@ -12,6 +12,7 @@ return [
 
 
     // ------ FOOTER ------ //
+    'Berliner Footer Description' => 'Berliner Brotfabrik merupakan Toko Roti dan Pastry Jerman pertama di Tasikmalaya. Menawarkan variasi kue kering, minuman, dan hidangan lainnya yang rendah kalori.',
     'Information' => 'Informasi',
     'About Us' => 'Tentang Kami',
     'Contact Us' => 'Hubungi Kami',
@@ -25,14 +26,20 @@ return [
     'First German Bakery' => 'Kedai Roti dan Kue Jerman <br> Pertama di Tasikmalaya',
     'We Make Life Healthy' => 'Dengan kami, <br> anda bisa hidup sehat dengan <br> kalori yang lebih sedikit',
     'Get To Know Us' => 'Kenali Kami',
+    'Get to Know Us Description' => 'Berliner Brotfabrik menawarkan beragam kue kering rendah kalori yang pasti akan menggugah selera Anda sekaligus membantu Anda tetap sehat!',
     'Our Story' => 'Cerita Kami',
     // Four Qualities
     'Consistent Quality' => 'Kualitas yang Konsisten',
+    'Quality Description' => 'Setiap produk dibuat dengan penuh kehati-hatian dan presisi, memastikan kualitas yang konsisten pada setiap pembelian.',
     'Fresh' => 'Segar',
+    'Fresh Description' => 'Produk kami disajikan langsung dari oven. Tidak ada yang dibuat sebelumnya atau dipanaskan ulang.',
     'Sweet' => 'Enak',
+    'Sweet Description' => 'Setiap produk pasti akan memikat selera Anda! Koki kami bekerja keras untuk menciptakan produk yang paling lezat.',
     'Low Calorie' => 'Kalori yang Sedikit',
+    'Calorie Description' => 'Semua produk dibuat menggunakan bahan-bahan rendah kalori, memastikan kesehatan di setiap gigitan!',
     // Things We Make
     'Things We Make' => 'Hal-hal yang Kami Buat',
+    'Things We Make Description' => 'Di Berliner Brotfabrik, kami tidak hanya menjual kue kering, tetapi juga berbagai makanan selain hidangan penutup serta minuman! Lihat menu lengkap kami dan temukan camilan yang sempurna untuk Anda dan teman-teman Anda.',
     'Full Menu' => 'Menu Lengkap',
 
 

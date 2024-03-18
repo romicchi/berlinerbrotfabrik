@@ -10,6 +10,7 @@ return [
     'Contact Us' => 'Contact Us',
 
     // ------ FOOTER ------ //
+    'Berliner Footer Description' => 'Berliner Brotfabrik is the first German Bakery and Pastry in Tasikmalaya. Offering a low-calorie selection of pastries, non-desserts, and drinks.',
     'Information' => 'Information',
     'Store Open' => 'Store Open',
     'Monday - Saturday' => 'Monday - Saturday: 10:00 am - 8:00 pm',
@@ -19,14 +20,20 @@ return [
     'First German Bakery' => 'First German Bakery and <br> Pastry in Tasikmalaya',
     'We Make Life Healthy' => 'We Make Life <br> Healthy with Less <br> Calorie',
     'Get To Know Us' => 'Get To Know Us',
+    'Get to Know Us Description' => 'Berliner Brotfabrik offers a variety of low-calorie pastries that are sure to entice your taste buds while helping you stay healthy!',
     'Our Story' => 'Our Story',
     // Four Qualities
     'Consistent Quality' => 'Consistent Quality',
+    'Quality Description' => 'Every product is made with care and precision, ensuring consistent quality with every purchase.',
     'Fresh' => 'Fresh',
+    'Fresh Description' => 'Our products are served straight out of the oven. Nothing premade or reheated.',
     'Sweet' => 'Sweet',
+    'Sweet Description' => 'Each product is sure to entice your taste buds! Our chefs work hard to create nothing but the tastiest products.',
     'Low Calorie' => 'Less / Low Calorie',
+    'Calorie Description' => 'All products are made using low calorie ingredients, ensuring health with every bite!',
     // Things We Make
     'Things We Make' => 'Things We Make',
+    'Things We Make Description' => 'Here at Berliner Brotfabrik, we sell not just pastries, but a variety of non-desserts and drinks as well! Check out our full menu and find the perfect snack for you and your friends.',
     'Full Menu' => 'Full Menu',
     
     // ------ ABOUT US ------ //
