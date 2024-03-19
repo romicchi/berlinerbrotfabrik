@@ -26,38 +26,28 @@
         </header>
 
         <!-- OUR STORY -->
-        <section class="container mx-auto flex flex-col lg:flex-row items-center justify-center pt-24 lg:pt-16 lg:pl-16 lg:pr-16 px-4 sm:px-0">
-            <div class="lg:w-1/2 lg:pr-16 mb-8 lg:mb-0">
-                <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-green-text text-center sm:text-left md:text-3xl lg:text-4xl">
-                    {!! __('messages.Our Story') !!}
-                </h2>                
-                <div class="w-20 h-1 gb-lgreen rounded-full mb-6 mx-auto sm:mx-0"></div>
+        <section class="container mx-auto flex flex-col items-center justify-center pt-24 lg:pt-16 px-4 sm:px-0">
+            <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-green-text text-center md:text-3xl lg:text-4xl">
+                {!! __('messages.Our Story') !!}
+            </h2>
+            <div class="w-20 h-1 gb-lgreen rounded-full mb-6"></div>
+            <div class="lg:w-3/4 mb-8">
+                <div class="flex justify-center items-center w-full mb-4">
+                    <img src="{{ asset('img/story.png') }}" alt="Team 1" class="hover-effect shadow-xl h-auto md:h-112 w-full mx-4 md:mx-auto" data-aos="fade-in" data-aos-duration="1000">
+                </div>
                 <p class="mb-8 text-lg font-normal text-justify text-gray-600">
-                    {!! __('messages.Lorem') !!}
-                </p>
-            </div>
-            <div class="lg:w-1/2 lg:pl-0 overflow-hidden mb-4 sm:mb-4 md:mb-8">
-                <img src="{{ asset('img/story.png') }}" alt="Story" class="transform transition duration-1000 hover:scale-110 object-scale-down w-full h-auto shadow-xl" data-aos="fade-in" data-aos-duration="1000">
-            </div>
-        </section>
-
-        <!-- WHO WE ARE -->
-        <section class="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-center pb-24 lg:pb-16 lg:pl-16 lg:pr-16 px-4 sm:px-0">
-            <div class="lg:w-1/2 lg:pr-0 lg:mb-0 overflow-hidden mb-8 sm:mb-0">
-                <img src="{{ asset('img/who-we-are.png') }}" alt="Who" class="transform transition duration-1000 hover:scale-110 object-scale-down w-full h-auto shadow-xl" data-aos="fade-in" data-aos-duration="1000">
-            </div>
-            <div class="lg:w-1/2 lg:pl-16">
-                <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-green-text text-center sm:text-left md:text-3xl lg:text-4xl">
-                    {!! __('messages.Who We Are') !!}
-                </h2>
-                <div class="w-20 h-1 gb-lgreen rounded-full mb-6 mx-auto sm:mx-0"></div>
-                <p class="mb-8 text-lg font-normal text-justify text-gray-600">
-                    {!! __('messages.Lorem') !!}
+                    <span id="visible-text">{!! __('messages.Our Story Description') !!}</span>
+                    <span id="dots">...</span>
+                    <span id="more-text" style="display: none;">{!! __('messages.Our Story Description More') !!}</span>
+                    <a class="text-blue-800" id="read-more" href="#" onclick="readMore(); return false;">See more V</a>
                 </p>
             </div>
         </section>
 
-        <!-- OUR MANAGEMENT -->
+        <!-- LINE -->
+        <div class="w-1/2 mt-12 gb-green lg:mt-16 h-0.5 bg-gray-800 mx-auto"></div>
+
+        <!-- OUR TEAM -->
         <section class="container mx-auto text-center pt-24 lg:pt-16">
             <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-green-text md:text-3xl lg:text-4xl">
                 {!! __('messages.Our Team') !!}
@@ -320,16 +310,32 @@
         @include('layouts.footer')
 
         <script>
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-</script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+
+            function readMore() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more-text");
+                var btnText = document.getElementById("read-more");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "See more V"; 
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "See less ^"; 
+                    moreText.style.display = "inline";
+                }
+            }
+        </script>
     </body>
 </html>
 

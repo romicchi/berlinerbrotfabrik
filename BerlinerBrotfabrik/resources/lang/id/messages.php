@@ -46,7 +46,6 @@ return [
 
     // ------ ABOUT US ------ //
     'Our Story' => 'Cerita Kami',
-    'Who We Are' => 'Kami Siapa',
     'Our Team' => 'Tim Kami',
     'Our Management' => 'Manajemen Kami',
     // Harald Fuechsel
@@ -76,4 +75,24 @@ return [
     'Email Us' => 'Email Kami',
     'CONTACT NOW' => 'Kontak Sekarang',
     'Drop us a message' => 'Kirim pesan pada kami',
+
+    // OUR STORY DESCRIPTION
+    'Our Story Description' => 'Pada tahun 2004, pendiri dan satu-satunya direktur pelaksana dari beberapa perusahaan Jerman yang beroperasi di Eropa, Harald Fuechsel, diminta oleh Layanan Pakar Senior Jerman untuk memberikan pengalaman bertahun-tahunnya ke salah satu universitas di Indonesia.
+    <br> <br> Sangat menarik baginya untuk bisa membantu, sebagai ahli senior di Indonesia, sehingga beliau langsung menyetujuinya.
+    <br> <br> Dua gelar universitasnya sebagai insinyur mesin dengan fokus pada teknologi pangan dan sebagai pengacara bisnis merupakan keberuntungan baginya.
+    <br> <br> Agar perkuliahan dapat mudah dimengerti oleh siswa dan guru, maka dari itu diterjemahkanlah secara bersamaan dari bahasa Inggris ke bahasa Indonesia, yang mana membutuhkan penerjemah.
+    <br> <br> Untuk tugas ini, diberikan kepada RD. Hena Mulianakusumah dari Sekolah Tinggi Bahasa Asing Bandung dengan spesialisasi bahasa Inggris.
+    <br> <br> Pada tahun-tahun berikutnya, kolaborasi yang sangat erat terjalin antara keduanya, yang mencakup berbagai proyek.',
+
+    'Our Story Description More' => 'Perusahaan patungan kemudian didirikan dengan fokus mendukung UMKM dan start-up.
+    <br> <br> Idenya yang lain adalah membangun toko roti dan kue Jerman di Tasikmalaya, “Berliner Brotfabrik”.
+    <br> <br> Selain bahasa Jerman, ia juga mempelajari “perkembangan UMKM dan start-up” di Jerman.
+    <br> <br> Dia juga belajar di Akademi Bakery Jerman Pertama di Olpe. Ia juga menyelesaikan magang selama beberapa bulan di Frechen, sebuah kota dekat Cologne, dan di Dresden.
+    <br> <br> Dua anggota tim Bakery asal Tasikmalaya juga diutus ke Jerman untuk magang.
+    <br> <br> Kualifikasi tim “Berliner Brotfabrik” di Tasikmalaya ini dilengkapi dengan pengerahan tenaga ahli dari Jerman selama beberapa bulan, diantaranya adalah Bakery Manager dari KADIN Cologne, Master Baker Claus Gerhard dan Master Baker untuk Pastry dari Dresden, Gerhard Gradel, selain itu Master Baker Sebastian Pietsch.
+    <br> <br> Pelukis dan seniman grafis Hans-Jörg Waskowski, yang merancang logo “Berliner Brotfabrik” dan mengembangkan berbagai elemen desain untuk lokasi Toko Roti dan Kue Jerman, juga memainkan peran penting.
+    <br> <br> Gedung baru “Berliner Brotfabrik” di Jalan Gunung Sari No. 25, yang dibuka pada tahun 2018, menciptakan ruangan yang menarik untuk produksi, penjualan, kafe, dan pertemuan.
+    <br> <br> Bangunan ini dibangun dengan gaya rumah setengah kayu Jerman dari abad ke-17.
+    <br> <br> Berliner Brotfabrik akan merayakan hari jadinya yang ke 10 pada tahun 2024.',
+
 ];

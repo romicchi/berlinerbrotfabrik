@@ -18,3 +18,9 @@
 .swiper-pagination-bullet {
     background: #1D571E !important;
 }
+
+@media (min-width: 768px) {
+    .md\:h-112 {
+        height: 40rem/* 384px */;
+    }
+}

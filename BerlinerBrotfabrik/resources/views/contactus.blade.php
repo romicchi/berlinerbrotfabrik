@@ -90,7 +90,7 @@
         </div>
 
         <!-- LINE -->
-        <div class="w-full mt-12 gb-green lg:mt-16 h-0.5 bg-gray-800"></div>
+        <div class="w-1/2 mt-12 gb-green lg:mt-16 h-0.5 bg-gray-800 mx-auto"></div>
 
         <!-- CONTACT NOW -->
         <section class="container mx-auto flex items-center justify-center mt-12 lg:mt-16 lg:pl-16 lg:pr-16">
