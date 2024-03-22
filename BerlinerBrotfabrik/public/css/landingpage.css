@@ -1,19 +1,11 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 .text-logo {
     font-family: 'Old English Text MT', serif;
 }
 
 .text-outline {
     text-shadow: 2px 2px 4px #000000;
-}
-
-.icon-hover {
-    transition: transform 0.5s ease-in-out;
-}
-
-.icon-hover:hover {
-    transform: rotate(360deg);
-}
-
-.footer-top-area::after {
-    background-image: url("../img/bg-patern1.png");
 }

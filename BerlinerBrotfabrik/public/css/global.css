@@ -1,11 +1,3 @@
-body {
-    font-family: 'IBM Plex Mono', monospace;
-}
-
-.text-logo {
-    font-family: 'Old English Text MT', serif;
-}
-
 .gb-green {
     background-color: #1D571E;
 }
@@ -28,28 +20,4 @@ body {
 
 .gb-white-text {
     color: #F5F7F8;
-}
-
-.hover-effect {
-    transition: transform 0.3s ease-in-out;
-}
-
-.hover-effect:hover {
-    transform: scale(1.05) !important;
-}
-
-.shadow-green {
-    box-shadow: -15px 20px 0px 0 #789461;
-}
-
-.shadow-green-reverse {
-    box-shadow: 20px 15px 0px 0 #789461;
-}
-
-.shadow-lgreen {
-    box-shadow: 20px 15px 0px 0 #DBE7C9;
-}
-
-.text-danger {
-    color: #FF0000;
 }

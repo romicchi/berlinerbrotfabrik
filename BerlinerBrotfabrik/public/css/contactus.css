@@ -1,7 +1,0 @@
-html, body {
-    background-color: #F5F7F8;
-}
-
-.footer-top-area::after {
-    background-image: url("../img/bg-patern2.png");
-}
