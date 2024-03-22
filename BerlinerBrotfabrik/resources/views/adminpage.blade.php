@@ -1,3 +1,5 @@
+@include('layouts.app')
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -79,50 +81,9 @@
 
 <div class="flex flex-col bg-white p-10 rounded shadow-xl mr-4 w-full md:w-2/3 h-full flex-grow">
     <h2 class="text-xl mb-3">Items</h2>
-    <div style="height: 458px; overflow-y: auto;">
-        <table class="table-auto divide-y divide-gray-200 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-full">
-            <thead>
-                <tr>
-                    <th class="px-6 py-3 font-bold">Name</th>
-                    <th class="px-6 py-3 font-bold">Description</th>
-                    <th class="px-6 py-3 font-bold">Category</th>
-                    <th class="px-6 py-3 font-bold">Type</th>
-                    <th class="px-6 py-3 font-bold">Image</th>
-                    <th class="px-6 py-3 font-bold">Action</th>
-                </tr>
-            </thead>
-            <tbody>
-            @if(isset($items))
-                @foreach($items as $item)
-                    <tr>
-                        <td class="px-6 py-4 text-sm text-gray-500">{{ $item->name }}</td>
-                        <td class="px-6 py-4 text-sm text-gray-500">{{ $item->description }}</td>
-                        <td class="px-6 py-4 text-sm text-gray-500">{{ $item->category }}</td>
-                        <td class="px-6 py-4 text-sm text-gray-500">{{ $item->type }}</td>
-                        <td class="px-6 py-4 text-sm text-gray-500">
-                            <img src="{{ asset('images/' . $item->image) }}" alt="{{ $item->name }}" class="w-20 h-20 cursor-pointer imageModalOpener">
-                        </td>
-                        <td class="px-6 py-4 text-sm text-gray-500">
-                            <div class="flex flex-col items-center">
-                                <button class="editButton text-indigo-600 hover:text-indigo-900 mb-2" data-id="{{ $item->id }}" data-name="{{ $item->name }}" data-description="{{ $item->description }}" data-category="{{ $item->category }}" data-type="{{ $item->type }}">
-                                    <i class="fa-solid fa-pen-to-square"></i>
-                                </button>
-                                <form action="{{ route('items.destroy', $item->id) }}" method="POST">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button type="submit" class="text-red-600 hover:text-red-900">
-                                        <i class="fas fa-trash"></i>
-                                    </button>
-                                </form>
-                            </div>
-                        </td>
-                    </tr>
-                @endforeach
-            @endif
-            </tbody>
-            </table>
+    <div style="height: 458px;">
+        <livewire:items-table/>
         </div>
-        {{ $items->links() }}
     </div>
 </div>
 
