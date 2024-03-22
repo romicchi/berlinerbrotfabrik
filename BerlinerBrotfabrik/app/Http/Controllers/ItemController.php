@@ -7,14 +7,10 @@ use App\Models\Item;
 
 class ItemController extends Controller
 {
-    public function index()
-{
-    //
-}
 
 public function adminPage()
     {
-        $items = Item::all();
+        $items = Item::paginate(5);
 
         return view('adminpage', ['items' => $items]);
     }

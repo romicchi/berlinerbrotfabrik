@@ -17,43 +17,58 @@
 
 <!-- Add Menu Items -->
 
-<div class="flex justify-center min-h-screen items-center">
-    <div class="flex flex-col bg-white p-10 rounded shadow-xl w-1/3 mr-4">
-       
-                <h1 class="text-2xl font-bold mb-5">Add Menu Items</h1>
-                <h2 class="text-xl mb-3">Add Item</h2>
-                <form action="{{ route('items.store') }}" method="POST" enctype="multipart/form-data">
-                    @csrf
-                    <div class="mb-4">
+<div class="flex flex-col md:flex-row justify-center min-h-screen ml-4 items-center">
+    <div class="flex flex-col bg-white p-10 rounded shadow-xl w-full md:w-1/3 mr-4 mb-4 md:mb-0">
+        
+        <h1 class="text-2xl font-bold mb-5">Add Menu Items</h1>
+        <h2 class="text-xl mb-3">Add Item</h2>
+        <form action="{{ route('items.store') }}" method="POST" enctype="multipart/form-data">
+            @csrf
+            <div class="mb-4">
                 <label for="name" class="block text-gray-700">Name:</label>
-                <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" required>
+                <input type="text" id="name" name="name" class="mt-1 block w-full h-10 border-2 border-gray-300 px-2 rounded-md shadow-sm">
+                @error('name')
+                    <small _ngcontent-irw-c66 class="text-danger">* Name is required.</small>
+                @enderror
             </div>
 
             <div class="mb-4">
                 <label for="description" class="block text-gray-700">Description:</label>
-                <textarea id="description" name="description" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" required></textarea>
+                <textarea id="description" name="description" class="mt-1 block w-full h-12 border-2 border-gray-300 px-2 py-1 rounded-md shadow-sm"></textarea>
+                @error('description')
+                    <small _ngcontent-irw-c66 class="text-danger">* Description is required.</small>
+                @enderror
             </div>
 
             <div class="mb-4">
                 <label for="category" class="block text-gray-700">Category:</label>
-                <select id="category" name="category" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                <select id="category" name="category" class="mt-1 block w-full h-10 border-2 border-gray-300 rounded-md shadow-sm">
                     <option value="bread-pastry">Bread-Pastry</option>
                     <option value="cake-dessert">Cake-Dessert</option>
                     <option value="drinks">Drinks</option>
                 </select>
+                @error('category')
+                    <small _ngcontent-irw-c66 class="text-danger">* Category is required.</small>
+                @enderror
             </div>
 
             <div class="mb-4">
                 <label for="type" class="block text-gray-700">Type:</label>
-                <select id="type" name="type" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                <select id="type" name="type" class="mt-1 block w-full h-10 border-2 border-gray-300 rounded-md shadow-sm">
                     <option value="Regular Item">Regular Item</option>
                     <option value="Best Seller">Best Seller</option>
                 </select>
+                @error('type')
+                    <small _ngcontent-irw-c66 class="text-danger">* Type is required.</small>
+                @enderror
             </div>
 
             <div class="mb-4">
                 <label for="image" class="block text-gray-700">Image:</label>
-                <input type="file" id="image" name="image" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" required>
+                <input type="file" id="image" name="image" class="mt-1 block w-full h-10 rounded-md shadow-sm">
+                @error('image')
+                    <small _ngcontent-irw-c66 class="text-danger">* Image is required.</small>
+                @enderror
             </div>
 
             <button type="submit" class="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Add Item</button>
@@ -62,7 +77,7 @@
 
 <!--Menu Display Grid-->
 
-<div class="flex flex-col bg-white p-10 rounded shadow-xl w-2/3 h-full flex-grow">
+<div class="flex flex-col bg-white p-10 rounded shadow-xl mr-4 w-full md:w-2/3 h-full flex-grow">
     <h2 class="text-xl mb-3">Items</h2>
     <div style="height: 458px; overflow-y: auto;">
         <table class="table-auto divide-y divide-gray-200 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-full">
@@ -78,35 +93,36 @@
             </thead>
             <tbody>
             @if(isset($items))
-    @foreach($items as $item)
-        <tr>
-            <td class="px-6 py-4 text-sm text-gray-500">{{ $item->name }}</td>
-            <td class="px-6 py-4 text-sm text-gray-500">{{ $item->description }}</td>
-            <td class="px-6 py-4 text-sm text-gray-500">{{ $item->category }}</td>
-            <td class="px-6 py-4 text-sm text-gray-500">{{ $item->type }}</td>
-            <td class="px-6 py-4 text-sm text-gray-500">
-                <img src="{{ asset('images/' . $item->image) }}" alt="{{ $item->name }}" class="w-20 h-20 cursor-pointer imageModalOpener">
-            </td>
-            <td class="px-6 py-4 text-sm text-gray-500">
-                <div class="flex flex-col items-center">
-                    <button class="editButton text-indigo-600 hover:text-indigo-900 mb-2" data-id="{{ $item->id }}" data-name="{{ $item->name }}" data-description="{{ $item->description }}" data-category="{{ $item->category }}" data-type="{{ $item->type }}">
-                        <i class="fa-solid fa-pen-to-square"></i>
-                    </button>
-                    <form action="{{ route('items.destroy', $item->id) }}" method="POST">
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="text-red-600 hover:text-red-900">
-                            <i class="fas fa-trash"></i>
-                        </button>
-                    </form>
-                </div>
-            </td>
-        </tr>
-    @endforeach
-@endif
-</tbody>
+                @foreach($items as $item)
+                    <tr>
+                        <td class="px-6 py-4 text-sm text-gray-500">{{ $item->name }}</td>
+                        <td class="px-6 py-4 text-sm text-gray-500">{{ $item->description }}</td>
+                        <td class="px-6 py-4 text-sm text-gray-500">{{ $item->category }}</td>
+                        <td class="px-6 py-4 text-sm text-gray-500">{{ $item->type }}</td>
+                        <td class="px-6 py-4 text-sm text-gray-500">
+                            <img src="{{ asset('images/' . $item->image) }}" alt="{{ $item->name }}" class="w-20 h-20 cursor-pointer imageModalOpener">
+                        </td>
+                        <td class="px-6 py-4 text-sm text-gray-500">
+                            <div class="flex flex-col items-center">
+                                <button class="editButton text-indigo-600 hover:text-indigo-900 mb-2" data-id="{{ $item->id }}" data-name="{{ $item->name }}" data-description="{{ $item->description }}" data-category="{{ $item->category }}" data-type="{{ $item->type }}">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </button>
+                                <form action="{{ route('items.destroy', $item->id) }}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="text-red-600 hover:text-red-900">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                @endforeach
+            @endif
+            </tbody>
             </table>
         </div>
+        {{ $items->links() }}
     </div>
 </div>
 
@@ -134,23 +150,30 @@
             @method('PUT')
 
             <div>
-                <label for="editName">Name</label>
+                <label for="editName">Name: </label>
                 <input id="editName" name="name" type="text" required>
             </div>
 
             <div>
-                <label for="editDescription">Description</label>
+                <label for="editDescription">Description: </label>
                 <input id="editDescription" name="description" type="text" required>
             </div>
 
             <div>
-                <label for="editCategory">Category</label>
-                <input id="editCategory" name="category" type="text" required>
+                <label for="editCategory">Category: </label>
+                <select id="editCategory" name="category" required>
+                    <option value="bread-pastry">Bread-Pastry</option>
+                    <option value="cake-dessert">Cake-Dessert</option>
+                    <option value="drinks">Drinks</option>
+                </select>
             </div>
 
             <div>
-                <label for="editType">Type</label>
-                <input id="editType" name="type" type="text" required>
+                <label for="editType">Type: </label>
+                <select id="editType" name="type" required>
+                    <option value="Regular Item">Regular Item</option>
+                    <option value="Best Seller">Best Seller</option>
+                </select>
             </div>
 
             <!-- Add more fields as necessary -->

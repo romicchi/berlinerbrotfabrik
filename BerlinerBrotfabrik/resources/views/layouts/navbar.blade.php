@@ -12,13 +12,21 @@
         <a href="#" class="mx-6">About us</a>
         <a href="#" class="mx-6">Contact us</a>
         @if(Auth::check())
-            <a href="{{ route('logout') }}" class="mx-6"
-               onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                Logout
-            </a>
-            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                @csrf
-            </form>
+            @php
+                $currentRoute = Route::currentRouteName();
+            @endphp
+
+            @if($currentRoute == 'menupage' || $currentRoute == 'aboutus' || $currentRoute == 'contactus')
+                <a href="{{ route('adminpage') }}" class="mx-6">Admin</a>
+            @else
+                <a href="{{ route('logout') }}" class="mx-6"
+                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                    Logout
+                </a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
+            @endif
         @endif
     </div>
 </header>

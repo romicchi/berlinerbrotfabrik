@@ -29,9 +29,9 @@
     <!-- Description Box -->
     <div class="col-md-6" style="background-color: #789461; width: 500px; height: 500px; overflow: auto;">
         <img class="best-seller-logo" src="{{ asset('img/best seller logo.png') }}" alt="Best Seller Logo">
-        <h2 id="carouselTitle" class="item-name">{{ $bestSellerItems->first()->name }}</h2>
+        <h2 id="carouselTitle" class="item-name">{{ $bestSellerItems->first() ? $bestSellerItems->first()->name : 'Empty' }}</h2>
         <hr class="item-line" style="border: none; border-top: 3px solid #45474B; width: 80%; margin: 1rem auto;">
-        <p id="carouselDescription" class="item-description" style="color: #DBE7C9; font-size: 20px; padding-left: 2rem; max-width: 80%; margin: 0 auto;">{{ $bestSellerItems->first()->description }}</p>
+        <p id="carouselDescription" class="item-description" style="color: #DBE7C9; font-size: 20px; padding-left: 2rem; max-width: 80%; margin: 0 auto;">{{ $bestSellerItems->first() ? $bestSellerItems->first()->description : 'Empty' }}</p>
     </div>
 </div>
     <!-- Next Button -->
