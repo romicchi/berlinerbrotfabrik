@@ -144,28 +144,42 @@
     </div>
 </div>
 
+<!-- Delete Confirmation Modal -->
+<div id="deleteConfirmationModal" class="hidden fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
+    <div class="bg-white p-4 rounded relative">
+        <h2 class="text-xl mb-2">Confirm Delete</h2>
+        <p>Are you sure you want to delete this item?</p>
+        <div class="mt-4 flex justify-end">
+            <button id="confirmDeleteButton" class="px-4 py-2 bg-red-500 text-white rounded mr-2">Yes, Delete</button>
+            <button id="cancelDeleteButton" class="px-4 py-2 bg-gray-500 text-white rounded">Cancel</button>
+        </div>
+    </div>
+</div>
+
 @include('layouts.footer')
 </body>
     
 <script>
-    document.querySelectorAll('.editButton').forEach(button => {
-        button.addEventListener('click', () => {
-            document.getElementById('editForm').action = `/items/${button.dataset.id}`;
-            document.getElementById('editName').value = button.dataset.name;
-            document.getElementById('editDescription').value = button.dataset.description;
-            document.getElementById('editCategory').value = button.dataset.category;
-            document.getElementById('editType').value = button.dataset.type;
+    // Listen for the editItem event dispatched from Livewire
+    window.addEventListener('editItem', event => {
+        const item = event.detail.item;
 
-            // Set more fields as necessary
+        // Populate the modal fields with the item data
+        document.getElementById('editForm').action = `/items/${item.id}`;
+        document.getElementById('editName').value = item.name;
+        document.getElementById('editDescription').value = item.description;
+        document.getElementById('editCategory').value = item.category;
+        document.getElementById('editType').value = item.type;
 
-            document.getElementById('editModal').classList.remove('hidden');
-        });
+        // Show the modal
+        document.getElementById('editModal').classList.remove('hidden');
     });
 
     document.getElementById('closeButton').addEventListener('click', () => {
         document.getElementById('editModal').classList.add('hidden');
     });
 
+    // Image Modal
     document.querySelectorAll('.imageModalOpener').forEach(image => {
         image.addEventListener('click', () => {
             document.getElementById('modalImage').src = image.src;
@@ -173,8 +187,29 @@
         });
     });
 
+    // Close Image Modal
     document.getElementById('closeImageModal').addEventListener('click', () => {
         document.getElementById('imageModal').classList.add('hidden');
+    });
+
+    // Delete Confirmation Modal
+    window.addEventListener('showDeleteConfirmation', event => {
+        const rowId = event.detail.rowId;
+        // Show the confirmation modal
+        document.getElementById('deleteConfirmationModal').classList.remove('hidden');
+        // Handle delete confirmation
+        document.getElementById('confirmDeleteButton').addEventListener('click', () => {
+            // Dispatch event to delete item
+            Livewire.dispatch('delete', { rowId: event.detail.rowId });
+                    
+            // Hide the confirmation modal
+            document.getElementById('deleteConfirmationModal').classList.add('hidden');
+        });
+        // Handle cancel delete
+        document.getElementById('cancelDeleteButton').addEventListener('click', () => {
+            // Hide the confirmation modal
+            document.getElementById('deleteConfirmationModal').classList.add('hidden');
+        });
     });
 </script>
 

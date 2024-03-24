@@ -32,6 +32,7 @@ Route::resource('items', ItemController::class);
 
 Route::middleware(['authenticate'])->group(function () {
     Route::get('/adminpage', [ItemController::class, 'adminPage'])->name('adminpage');
+    Route::delete('/items/{id}', [ItemController::class, 'destroy'])->name('item.destroy');
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 });
 
