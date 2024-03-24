@@ -1,0 +1,26 @@
+.swiper-container {
+    overflow: hidden;
+}
+
+.swiper-slide {
+    width: auto;
+}
+
+.swiper-pagination {
+    position: relative;
+    bottom: 10px; /* Adjust as needed */
+}
+
+.footer-top-area::after {
+    background-image: url("../img/bg-patern2.png");
+}
+
+.swiper-pagination-bullet {
+    background: #1D571E !important;
+}
+
+@media (min-width: 768px) {
+    .md\:h-112 {
+        height: 40rem/* 384px */;
+    }
+}

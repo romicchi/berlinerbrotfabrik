@@ -2,8 +2,20 @@
     font-family: 'Old English Text MT', serif;
 }
 
+
+a {
+    color: #1D571E !important;
+    font-size: 1.4rem;
+    font-weight: normal;
+    text-decoration: none !important;
+}
+
 .text-outline {
     text-shadow: 2px 2px 4px #000000;
+}
+
+.footer-top-area::after {
+    background-image: url("../img/bg-patern22.png");
 }
 
 .next-button {

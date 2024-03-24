@@ -126,6 +126,8 @@ return [
 
     'cipher' => 'AES-256-CBC',
 
+    'languages' => ['en', 'id'],
+
     /*
     |--------------------------------------------------------------------------
     | Maintenance Mode Driver
@@ -168,7 +170,6 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        Livewire\LivewireServiceProvider::class,
     ])->toArray(),
 
     /*
