@@ -85,3 +85,33 @@
     background-color: #838383;
 }
 
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@media (max-width: 768px) {
+    #regularItemsContainer {
+        display: flex;
+        overflow-x: auto;
+    }
+
+    #regularItemsContainer > div {
+        flex: 0 0 auto; /* This will prevent the items from growing and shrinking */
+        width: 100%; /* This will make each item take up the full width of the container */
+        max-width: calc(100vw - 10px); /* Subtract the margin from the viewport width */
+        margin-right: 10px;
+    }
+}
