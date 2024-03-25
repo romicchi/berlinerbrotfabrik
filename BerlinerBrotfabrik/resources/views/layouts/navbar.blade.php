@@ -6,7 +6,7 @@
 </head>
 <header class="gb-green text-white">
     <div class="container mx-auto flex justify-center items-center">
-        <a href="/Welcome">
+        <a href="/">
             <img src="{{ asset('img/logo.png') }}" alt="Logo" class="h-15 lg:h-20">
         </a>
     </div>
@@ -21,7 +21,7 @@
                 $currentRoute = Route::currentRouteName();
             @endphp
 
-            @if($currentRoute == 'menupage' || $currentRoute == 'aboutus' || $currentRoute == 'contactus' || $currentRoute == 'Welcome')
+            @if($currentRoute == 'menupage' || $currentRoute == 'aboutus' || $currentRoute == 'contactus' || $currentRoute == 'landingpage')
                 <a href="{{ route('adminpage') }}" class="mx-6 my-2 sm:my-0 link">Admin</a>
             @else
                 <a href="{{ route('logout') }}" class="mx-6 my-2 sm:my-0"

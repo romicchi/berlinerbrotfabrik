@@ -20,7 +20,7 @@ use App\Http\Controllers\LanguageController;
 
 Route::post('lang/{lang}', [LanguageController::class, 'switchLang'])->name('lang.switch');
 
-Route::get('/Welcome', function () {
+Route::get('/', function () {
     return view('landingpage');
 });
 
