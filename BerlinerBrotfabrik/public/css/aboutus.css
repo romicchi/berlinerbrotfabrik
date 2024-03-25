@@ -1,3 +1,7 @@
+body{
+    background-color: #F5F7F8;
+}
+
 .swiper-container {
     overflow: hidden;
 }

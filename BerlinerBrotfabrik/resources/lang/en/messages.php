@@ -83,7 +83,7 @@ return [
     <br> <br> In addition to the German language, he also studied in Germany “SME development and establishing start-up companies”.
     <br> <br> He also learned at the First German Bakery Academy in Olpe and completed internships lasting several months in the town of Frechen, near Cologne, and in Dresden.
     <br> <br> Two members of the bakery team from Tasikmalaya also completed internships in Germany.
-    <br> <br> The team training in Tasikmalaya was supplemented by the deployment of experts from Germany over several months, including the long-standing bakery boss of the Cologne Chamber of Crafts, master baker Claus Gerhard, the Dresden master baker and confectioner Gerhard Gradel and the master baker Sebastian Pietsch.
+    <br> <br> The team training in Tasikmalaya was supplemented by the deployment of experts from Germany over several months, including the long-standing bakery boss of the Cologne Chamber of Crafts, master baker Claus Gerhard, the Dresden master baker and confectioner Wolfgang Gradel and the master baker Sebastian Pietsch.
     <br> <br> The painter and graphic artist Hans-Jörg Waskowski, who designed the logo of the “Berliner Brotfabrik” and developed a whole range of design elements for the premises of the German Bakery and Pastry, also played a significant part.
     <br> <br> With the “Berliner Brotfabrik” own building on Jalan Gunung Sari No. 25, which was newly opened in the year 2018 in the style of a German half-timbered building from the 17th century, friendly rooms were created for production, sales, cafés and meetings.
     <br> <br> The “Berliner Brotfabrik” celebrated its 10th anniversary in 2024.

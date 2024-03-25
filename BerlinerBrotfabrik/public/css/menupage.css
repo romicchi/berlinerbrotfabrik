@@ -3,10 +3,16 @@
 }
 
 
-a {
+.link {
     color: #1D571E !important;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: normal;
+    text-decoration: none !important;
+    margin-top: 0;
+}
+
+.a-link {
+    color: #F5F7F8 !important;
     text-decoration: none !important;
 }
 

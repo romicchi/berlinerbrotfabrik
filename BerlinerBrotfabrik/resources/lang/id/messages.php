@@ -89,7 +89,7 @@ return [
     <br> <br> Selain bahasa Jerman, ia juga mempelajari “perkembangan UMKM dan start-up” di Jerman.
     <br> <br> Dia juga belajar di Akademi Bakery Jerman Pertama di Olpe. Ia juga menyelesaikan magang selama beberapa bulan di Frechen, sebuah kota dekat Cologne, dan di Dresden.
     <br> <br> Dua anggota tim Bakery asal Tasikmalaya juga diutus ke Jerman untuk magang.
-    <br> <br> Kualifikasi tim “Berliner Brotfabrik” di Tasikmalaya ini dilengkapi dengan pengerahan tenaga ahli dari Jerman selama beberapa bulan, diantaranya adalah Bakery Manager dari KADIN Cologne, Master Baker Claus Gerhard dan Master Baker untuk Pastry dari Dresden, Gerhard Gradel, selain itu Master Baker Sebastian Pietsch.
+    <br> <br> Kualifikasi tim “Berliner Brotfabrik” di Tasikmalaya ini dilengkapi dengan pengerahan tenaga ahli dari Jerman selama beberapa bulan, diantaranya adalah Bakery Manager dari KADIN Cologne, Master Baker Claus Gerhard dan Master Baker untuk Pastry dari Dresden, Wolfgang Gradel, selain itu Master Baker Sebastian Pietsch.
     <br> <br> Pelukis dan seniman grafis Hans-Jörg Waskowski, yang merancang logo “Berliner Brotfabrik” dan mengembangkan berbagai elemen desain untuk lokasi Toko Roti dan Kue Jerman, juga memainkan peran penting.
     <br> <br> Gedung baru “Berliner Brotfabrik” di Jalan Gunung Sari No. 25, yang dibuka pada tahun 2018, menciptakan ruangan yang menarik untuk produksi, penjualan, kafe, dan pertemuan.
     <br> <br> Bangunan ini dibangun dengan gaya rumah setengah kayu Jerman dari abad ke-17.

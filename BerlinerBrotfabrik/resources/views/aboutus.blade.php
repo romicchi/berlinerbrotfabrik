@@ -79,7 +79,7 @@
         <section class="container mx-auto flex flex-col md:flex-row items-center justify-center pb-24 pt-24 md:pt-16 md:pl-16 md:pr-16">
             <div class="w-full md:w-1/3 px-4 md:pr-8 mb-8 md:mb-0 text-center">
                 <img src="{{ asset('img/Harald.png') }}" alt="Team 1" class="rounded-lg hover-effect shadow-xl h-64 w-64 mx-auto" data-aos="fade-in" data-aos-duration="1000">                
-                <h3 class="mt-4 text-xl font-semibold gb-green-text">
+                <h3 class="mt-4 text-xl font-semibold text-center gb-green-text">
                     {!! __('messages.German Consultant') !!}
                 </h3>
                 <p class="font-medium text-gray-600">Harald Fuechsel</p>
@@ -124,7 +124,7 @@
                         </div>
                         <a href="https://www.facebook.com/profile.php?id=100058154600282" target="_blank">
                             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-75 flex flex-col items-center justify-center w-1/4 h-1/8">
-                                <i class="fab fa-facebook-f text-blue-600"></i>
+                                <i class="fab fa-facebook-f text-blue-600 fa-2x pt-1"></i>
                                 <p class="mt-2 text-center">
                                     {!! __('messages.Follow us on Facebook') !!}
                                 </p>
@@ -137,7 +137,7 @@
                         </div>
                         <a href="https://www.instagram.com/berlinerbrotfabrik/?hl=en" target="_blank">
                             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-75 flex flex-col items-center justify-center w-1/4 h-1/8">
-                                <i class="fab fa-instagram text-purple-600"></i>
+                                <i class="fab fa-instagram text-purple-600 fa-2x pt-1"></i>
                                 <p class="mt-2 text-center">
                                     {!! __('messages.Follow us on Instagram') !!}
                                 </p>
@@ -151,7 +151,7 @@
                         </div>
                         <a href="https://www.tiktok.com/@berlinerbrotfabrik" target="_blank">
                             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-75 flex flex-col items-center justify-center w-1/4 h-1/8">
-                                <i class="fab fa-tiktok text-black"></i>
+                                <i class="fab fa-tiktok text-black fa-2x pt-1"></i>
                                 <p class="mt-2 text-center">
                                     {!! __('messages.Follow us on TikTok') !!}
                                 </p>
@@ -164,7 +164,7 @@
                         </div>
                         <a href="https://wa.me/6281220000000" target="_blank">
                             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-75 flex flex-col items-center justify-center w-1/4 h-1/8">
-                                <i class="fab fa-whatsapp text-green-600"></i>
+                                <i class="fab fa-whatsapp text-green-600 fa-2x pt-1"></i>
                                 <p class="mt-2 text-center">
                                     {!! __('messages.Follow us on WhatsApp') !!}
                                 </p>
