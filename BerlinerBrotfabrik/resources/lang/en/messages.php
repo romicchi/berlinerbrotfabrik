@@ -37,7 +37,8 @@ return [
     'Full Menu' => 'Full Menu',
     
     // ------ ABOUT US ------ //
-    'Our Story' => 'Our Story',
+    'Our Story About Us' => 'Our Story',
+    'Who We Are' => 'Who We Are',
     'Our Team' => 'Our Team',
     'Our Management' => 'Our Management',
     // Harald Fuechsel
@@ -58,6 +59,8 @@ return [
     // Testimony
     'Testimony' => 'Testimony',
     'What Our Costumers Say' => 'What Our Costumers Say',
+    'See more V' => 'See more V',
+    'See less ^' => 'See less ^',
 
     // ------ CONTACT US ------ //
     'WE WANT TO HEAR FROM YOU' => 'WE WANT TO HEAR FROM YOU',
@@ -90,4 +93,19 @@ return [
     
     <br> <br> A special thank you goes to our loyal customers!',
 
-];
+    // WHO WE ARE DESCRIPTION
+    'Who We Are Description' => 'The "Berliner Brotfabrik" is the first German Bakery and Pastry in Tasikmalaya.
+    <br> <br> It will celebrate its 10th company anniversary in 2024.
+    <br> <br> We are very grateful to our loyal customers for this, because without our customers we are “nothing”.
+    <br> <br> We would like to continue to produce and provide real German baked goods and cakes for our customers in the coming months and years.
+    <br> <br> We pay great attention to your health.
+    <br> <br> We achieve this by consistently maintaining high quality standards by only using selected baking materials.',
+
+    'Who We Are Description More' => '<br> <br> We are also very calorie-conscious in our production and only use good fats and reduce sugar or sugary ingredients in our baked goods.
+    <br> <br> Of course, we also want to satisfy special customer requests.
+    <br> <br> This includes, among other things, gluten-free baked goods upon order.
+    <br> <br> Since 2022, we have been exchanging ideas with the company “Dr. Quent siblings” based in Freital near Dresden, in the field of product development.
+    <br> <br> Simply tell us or send us your wishes!
+    <br> <br> We always strive to fulfil these wishes to your satisfaction and on time.',
+
+];  

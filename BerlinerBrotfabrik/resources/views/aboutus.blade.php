@@ -29,7 +29,7 @@
         <!-- OUR STORY -->
         <section class="container mx-auto flex flex-col items-center justify-center pt-24 lg:pt-16 px-4 sm:px-0">
             <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-green-text text-center md:text-3xl lg:text-4xl">
-                {!! __('messages.Our Story') !!}
+                {!! __('messages.Our Story About Us') !!}
             </h2>
             <div class="w-20 h-1 gb-lgreen rounded-full mb-6"></div>
             <div class="lg:w-3/4 mb-8">
@@ -40,7 +40,29 @@
                     <span id="visible-text">{!! __('messages.Our Story Description') !!}</span>
                     <span id="dots">...</span>
                     <span id="more-text" style="display: none;">{!! __('messages.Our Story Description More') !!}</span>
-                    <a class="text-blue-800" id="read-more" href="#" onclick="readMore(); return false;">See more V</a>
+                    <a class="text-blue-800" id="read-more" href="#" onclick="readMore(); return false;">{!! __('messages.See more V') !!}</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- LINE -->
+        <div class="w-1/2 mt-12 gb-green mb-12 lg:mt-16 h-0.5 bg-gray-800 mx-auto"></div>
+
+        <!-- WHO WE ARE -->
+        <section class="container mx-auto flex flex-col lg:flex-row items-center justify-center pb-24 lg:pb-16 lg:pl-16 lg:pr-16 px-4 sm:px-0">
+            <div class="lg:w-1/2 lg:pr-0 lg:mb-0 overflow-hidden mb-8 sm:mb-4 md:mb-8 lg:mb-0 md:mx-auto">
+                <img src="{{ asset('img/who-we-are.png') }}" alt="Who" class="transform transition duration-1000 hover:scale-110 object-scale-down w-full h-auto shadow-xl" data-aos="fade-in" data-aos-duration="1000">
+            </div>
+            <div class="lg:w-1/2 lg:pl-16">
+                <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-green-text text-center sm:text-left md:text-3xl lg:text-4xl">
+                    {!! __('messages.Who We Are') !!}
+                </h2>
+                <div class="w-20 h-1 gb-lgreen rounded-full mb-6 mx-auto sm:mx-0"></div>
+                <p class="mb-8 text-lg font-normal text-justify text-gray-600">
+                <span id="visible-text-who-we-are">{!! __('messages.Who We Are Description') !!}</span>
+                <span id="dots-who-we-are">...</span>
+                <span id="more-text-who-we-are" style="display: none;">{!! __('messages.Who We Are Description More') !!}</span>
+                <a class="text-blue-800" id="read-more-who-we-are" href="#" onclick="readMoreWhoWeAre(); return false;">{!! __('messages.See more V') !!}</a>                
                 </p>
             </div>
         </section>
@@ -92,7 +114,7 @@
                 <h3 class="mt-4 text-xl font-semibold gb-green-text">
                     {!! __('messages.Owner and Bakery Manager') !!}
                 </h3>
-                <p class="font-medium text-gray-600">RD Hena Mulianakusumah</p>
+                <p class="font-medium text-gray-600">RD. Hena Mulianakusumah</p>
                 <p class="text-sm font-normal text-gray-600">
                     <br>{!! __('messages.Hena Description') !!}
                 </p>
@@ -102,7 +124,7 @@
                 <h3 class="mt-4 text-xl font-semibold gb-green-text">
                     {!! __('messages.Master Baker') !!}
                 </h3>
-                <p class="font-medium text-gray-600">Rari Gusep</p>
+                <p class="font-medium text-gray-600">Rarigusep</p>
                 <p class="text-sm font-normal text-gray-600">
                 <br>{!! __('messages.Rarigusep Description') !!}
                 </p>
@@ -332,7 +354,23 @@
                     moreText.style.display = "none";
                 } else {
                     dots.style.display = "none";
-                    btnText.innerHTML = "See less ^"; 
+                    btnText.innerHTML = "{!! __('messages.See less ^') !!}"; 
+                    moreText.style.display = "inline";
+                }
+            }
+
+            function readMoreWhoWeAre() {
+                var dots = document.getElementById("dots-who-we-are");
+                var moreText = document.getElementById("more-text-who-we-are");
+                var btnText = document.getElementById("read-more-who-we-are");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "See more V"; 
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "{!! __('messages.See less ^') !!}"; 
                     moreText.style.display = "inline";
                 }
             }

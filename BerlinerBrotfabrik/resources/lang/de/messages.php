@@ -37,7 +37,8 @@ return [
     'Full Menu' => 'Vollständige Speisekarte',
     
     // ------ ABOUT US ------ //
-    'Our Story' => 'Über uns',
+    'Our Story About Us' => 'Geschichte der Berliner Brotfabrik',
+    'Who We Are' => 'Wer wir sind',
     'Our Team' => 'Unser Team',
     'Our Management' => 'Unsere Geschäftsleitung',
     // Harald Fuechsel
@@ -58,6 +59,8 @@ return [
     // Testimony
     'Testimony' => 'Referenzen',
     'What Our Costumers Say' => 'Was unsere Kunden sagen',
+    'See more V' => 'Mehr anzeigen V',
+    'See less ^' => 'Weniger anzeigen ^',
 
     // ------ CONTACT US ------ //
     'WE WANT TO HEAR FROM YOU' => 'WIR MÖCHTEN VON IHNEN HÖREN',
@@ -93,4 +96,16 @@ return [
     
     <br> <br> Ein besonderer Dank geht an unsere treuen Kunden!',
 
+    // WHO WE ARE DESCRIPTION
+    'Who We Are Description' => 'Die Berliner Brotfabrik ist die erste deutsche Bäckerei und Konditorei in Tasikmalaya. Sie feiert im Jahr 2024 ihr 10-jähriges Firmenjubiläum.
+    <br> <br> Dafür sind wir unseren treuen Kunden sehr dankbar, denn ohne unsere Kunden sind wir „Nichts“.
+    <br> <br> Auch in den kommenden Monaten und Jahren möchten wir echte deutsche Backwaren und Torten für unsere Kunden produzieren und bereitstellen.
+    <br> <br> Dabei achten wir sehr auf Ihre Gesundheit. 
+    <br> <br> Das erreichen wir durch stets gleichbleibende hohe qualitative Standards, indem wir nur ausgewählte Backmaterialien verwenden.
+    <br> <br> Außerdem sind wir in der Herstellung sehr kalorienbewusst und verwenden in unseren Backwaren nur gute Fette beziehungsweise reduzieren Zucker oder zuckerhaltige Bestandteile.',
+    
+    'Who We Are Description More' => '<br> <br> Selbstverständlich möchten wir auch spezielle Kundenwünsche befriedigen.
+    <br> <br> Dazu gehören auf Bestellung unter anderem auch glutenfreie Backwaren. 
+    <br> <br> Hier tauschen wir uns seit 2022 mit dem in Freital bei Dresden ansässigen Unternehmen der Geschwister Dr. Quent auf dem Gebiet der Produktentwicklung aus.
+    <br> <br> Sagen oder senden Sie uns einfach Ihre Wünsche! Wir sind stets bemüht, diese Wünsche zu Ihrer Zufriedenheit und pünktlich zu erfüllen.',
 ];
