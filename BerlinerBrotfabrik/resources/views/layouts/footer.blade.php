@@ -45,8 +45,13 @@
             <h3 class="text-lg font-semibold mb-2">
                 {!! __('messages.Contact Us') !!}
             </h3>
-            <p>hmpconsultingph@gmail.com</p>
-            <p>Jalan Gunung Sari No 25, lengkongsari Tasikmalaya, West Java, Indonesia 46111</p>
+            <p>+62 81 322 088 480
+                <br>berlinerbrotfabrik2014@gmail.com
+                <br>Jalan Gunung Sari No 25,
+                <br>Lengkongsari, Tasikmalaya,
+                <br>Jawa Barat, 4611
+                <br>Indonesia
+            </p>
         </div>
         <div class="w-full px-2 sm:w-1/2 md:w-1/4 mb-4">
             <h3 class="text-lg font-semibold mb-2">

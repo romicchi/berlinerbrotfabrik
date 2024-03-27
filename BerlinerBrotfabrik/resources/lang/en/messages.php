@@ -10,30 +10,32 @@ return [
     'Contact Us' => 'Contact Us',
 
     // ------ FOOTER ------ //
-    'Berliner Footer Description' => 'Berliner Brotfabrik is the first German Bakery and Pastry in Tasikmalaya. Offering a low-calorie selection of pastries, non-desserts, and drinks.',
+    'Berliner Footer Description' => 'The Berliner Brotfabrik is the first German bakery and pastry in Tasikmalaya.
+    We offer a selection of low-calorie pastries, as well as food and drinks.',
     'Information' => 'Information',
     'Store Open' => 'Store Open',
     'Monday - Saturday' => 'Monday - Saturday: 10:00 am - 8:00 pm',
-    'Sunday' => 'Sunday: 08:00 am - 6:00 pm',
+    'Sunday' => 'Sunday: 10:00 a.m. to 6:00 p.m',
 
     // ------ LANDINGPAGE ------ //
     'First German Bakery' => 'First German Bakery and <br> Pastry in Tasikmalaya',
     'We Make Life Healthy' => 'We Make Life <br> Healthy with Less <br> Calorie',
     'Get To Know Us' => 'Get To Know Us',
-    'Get to Know Us Description' => 'Berliner Brotfabrik offers a variety of low-calorie pastries that are sure to entice your taste buds while helping you stay healthy!',
+    'Get to Know Us Description' => 'Berliner Brotfabrik offers a variety of low-calorie pastries that are sure to tempt your taste buds while helping you live a healthier life.',
     'Our Story' => 'Our Story',
     // Four Qualities
-    'Consistent Quality' => 'Consistent Quality',
-    'Quality Description' => 'Every product is made with care and precision, ensuring consistent quality with every purchase.',
+    'Constant Quality' => 'Constant Quality',
+    'Quality Description' => 'Each product is made with care and love to ensure consistent quality with every purchase.',
     'Fresh' => 'Fresh',
-    'Fresh Description' => 'Our products are served straight out of the oven. Nothing premade or reheated.',
-    'Sweet' => 'Sweet',
-    'Sweet Description' => 'Each product is sure to entice your taste buds! Our chefs work hard to create nothing but the tastiest products.',
-    'Low Calorie' => 'Less / Low Calorie',
-    'Calorie Description' => 'All products are made using low calorie ingredients, ensuring health with every bite!',
+    'Fresh Description' => 'Our baked goods are always fresh.',
+    'Yummy' => 'Yummy',
+    'Yummy Description' => 'Each product is sure to tantalize your taste buds! Our bakers and chefs work with dedication to create only the tastiest culinary delights.',
+    'Low Calorie' => 'Lower Calorie Content',
+    'Calorie Description' => 'Our products are made with reduced calorie ingredients to ensure health in every bite.',
     // Things We Make
     'Things We Make' => 'Things We Make',
-    'Things We Make Description' => 'Here at Berliner Brotfabrik, we sell not just pastries, but a variety of non-desserts and drinks as well! Check out our full menu and find the perfect snack for you and your friends.',
+    'Things We Make Description' => 'Here at Berliner Brotfabrik we not only offer baked goods, but also a variety of food and drinks!
+    <br> <br> Take a look at our menu and find the perfect offer for you and your friends.',
     'Full Menu' => 'Full Menu',
     
     // ------ ABOUT US ------ //
@@ -90,7 +92,7 @@ return [
     <br> <br> The painter and graphic artist Hans-Jörg Waskowski, who designed the logo of the “Berliner Brotfabrik” and developed a whole range of design elements for the premises of the German Bakery and Pastry, also played a significant part.
     <br> <br> With the “Berliner Brotfabrik” own building on Jalan Gunung Sari No. 25, which was newly opened in the year 2018 in the style of a German half-timbered building from the 17th century, friendly rooms were created for production, sales, cafés and meetings.
     <br> <br> The “Berliner Brotfabrik” celebrated its 10th anniversary in 2024.
-    
+
     <br> <br> A special thank you goes to our loyal customers!',
 
     // WHO WE ARE DESCRIPTION

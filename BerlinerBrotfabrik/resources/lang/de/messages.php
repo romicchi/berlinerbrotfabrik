@@ -7,33 +7,35 @@ return [
     // ------ HEADER ------ //
     'Menu' => 'Speisekarte',
     'About Us' => 'Über uns',
-    'Contact Us' => 'Kontaktiere uns',
+    'Contact Us' => 'Kontaktieren Sie uns',
 
     // ------ FOOTER ------ //
-    'Berliner Footer Description' => 'Die Berliner Brotfabrik ist die erste deutsche Bäckerei und Konditorei in Tasikmalaya. Wir bieten eine Auswahl an kalorienarmem Gebäck, nicht-süßen Speisen und Getränken.',
+    'Berliner Footer Description' => 'Die Berliner Brotfabrik ist die erste deutsche Bäckerei und Konditorei in Tasikmalaya. 
+    Wir bieten eine Auswahl von kalorienreduziertem Gebäck, sowie Speisen und Getränken an.',
     'Information' => 'Informationen',
-    'Store Open' => 'Geschäft geöffnet',
-    'Monday - Saturday' => 'Monday - Saturday: 10:00 am - 8:00 pm',
-    'Sunday' => 'Sunday: 08:00 am - 6:00 pm',
+    'Store Open' => 'Öffnungszeiten',
+    'Monday - Saturday' => 'Montag bis Samstag:	10:00 bis 20:00 Uhr',
+    'Sunday' => 'Sonntag: 10:00 bis 18:00 Uhr',
 
     // ------ LANDINGPAGE ------ //
     'First German Bakery' => 'Erste deutsche Bäckerei und Konditorei in Tasikmalaya',
     'We Make Life Healthy' => 'Wir machen das Leben <br> gesünder mit weniger <br> Kalorien.',
-    'Get To Know Us' => 'Lernen Sie uns kennen.',
-    'Get to Know Us Description' => 'Die Berliner Brotfabrik bietet eine Vielzahl von kalorienarmen Gebäcksorten an, die sicherlich Ihre Geschmacksknospen verführen und gleichzeitig dazu beitragen, dass Sie gesund bleiben!',
+    'Get To Know Us' => 'Lernen Sie uns kennen',
+    'Get to Know Us Description' => 'Die Berliner Brotfabrik bietet eine Vielzahl von kalorienreduzierten Gebäcksorten an, die sicherlich Ihre Geschmacksnerven verführen und gleichzeitig dazu beitragen, dass Sie gesünder leben.',
     'Our Story' => 'Unsere Geschichte',
     // Four Qualities
-    'Consistent Quality' => 'Konstante Qualität',
-    'Quality Description' => 'Jedes Produkt wird mit Sorgfalt und Präzision hergestellt, um eine konstante Qualität bei jedem Kauf zu gewährleisten.',
+    'Constant Quality' => 'Konstante Qualität',
+    'Quality Description' => 'Jedes Produkt wird mit Sorgfalt und Liebe hergestellt, um eine konstante Qualität bei jedem Kauf zu gewährleisten',
     'Fresh' => 'Frisch',
-    'Fresh Description' => 'Unsere Produkte werden direkt aus dem Ofen serviert. Nichts ist vorgefertigt oder aufgewärmt.',
-    'Sweet' => 'Lecker',
-    'Sweet Description' => 'Jedes Produkt wird sicherlich Ihre Geschmacksknospen verführen! Unsere Köche arbeiten hart daran, nichts als die leckersten Produkte zu kreieren.',
-    'Low Calorie' => 'Weniger / Geringer Kaloriengehalt',
-    'Calorie Description' => 'Alle Produkte werden mit kalorienarmen Zutaten hergestellt, um Gesundheit bei jedem Bissen zu gewährleisten!',
+    'Fresh Description' => 'Unsere Backwaren sind immer frisch.',
+    'Yummy' => 'Lecker',
+    'Yummy Description' => 'Jedes Produkt wird mit Gewissheit Ihre Geschmacksnerven verwöhnen! Unsere Bäcker und Köche arbeiten mit Hingabe daran, nur die leckersten Gaumenfreuden zu kreieren.',
+    'Low Calorie' => 'Geringer Kaloriengehalt',
+    'Calorie Description' => 'Unsere Produkte werden mit kalorienreduzierten Zutaten hergestellt, um Gesundheit bei jedem Bissen zu gewährleisten.',
     // Things We Make
     'Things We Make' => 'Sachen, die wir herstellen',
-    'Things We Make Description' => 'Hier bei der Berliner Brotfabrik verkaufen wir nicht nur Gebäck, sondern auch eine Vielzahl von nicht-süßen Speisen und Getränken! Schauen Sie sich unsere vollständige Speisekarte an und finden Sie den perfekten Snack für Sie und Ihre Freunde.',
+    'Things We Make Description' => 'Hier bei der Berliner Brotfabrik bieten wir nicht nur Backwaren, sondern auch eine Vielzahl von Speisen und Getränken an! 
+    <br> <br> Schauen Sie in unsere Speisekarte und finden Sie das perfekte Angebot für Sie und Ihre Freunde.',
     'Full Menu' => 'Vollständige Speisekarte',
     
     // ------ ABOUT US ------ //
@@ -51,11 +53,11 @@ return [
     'Master Baker' => 'Meisterbäcker',
     'Rarigusep Description' => 'SMK 1 Tasikmalaya, Diploma 1 (Hotel) / 6 months Training in 5-Star Hotel Malaysia <br> / First German Bakery Academy, Olpe, Germany',
     // Social
-    'Socials' => 'Soziale',
+    'Socials' => 'Soziales',
     'Follow us on Facebook' => 'Folgen Sie uns auf Facebook',
     'Follow us on Instagram' => 'Folgen Sie uns auf Instagram',
     'Follow us on TikTok' => 'Folgen Sie uns auf TikTok',
-    'Follow us on WhatsApp' => 'Schreiben Sie uns auf Whatsapp',
+    'Follow us on WhatsApp' => 'Schreiben Sie uns auf WhatsApp',
     // Testimony
     'Testimony' => 'Referenzen',
     'What Our Costumers Say' => 'Was unsere Kunden sagen',
@@ -64,7 +66,7 @@ return [
 
     // ------ CONTACT US ------ //
     'WE WANT TO HEAR FROM YOU' => 'WIR MÖCHTEN VON IHNEN HÖREN',
-    'Contact Us' => 'Kontaktiere uns',
+    'Contact Us' => 'Kontaktieren Sie uns',
     'Our Location' => 'Unsere Geschichte',
     'Phone Number' => 'Telefonnummer',
     'Email Us' => 'Schreiben Sie uns eine E-Mail',
@@ -107,5 +109,6 @@ return [
     'Who We Are Description More' => '<br> <br> Selbstverständlich möchten wir auch spezielle Kundenwünsche befriedigen.
     <br> <br> Dazu gehören auf Bestellung unter anderem auch glutenfreie Backwaren. 
     <br> <br> Hier tauschen wir uns seit 2022 mit dem in Freital bei Dresden ansässigen Unternehmen der Geschwister Dr. Quent auf dem Gebiet der Produktentwicklung aus.
-    <br> <br> Sagen oder senden Sie uns einfach Ihre Wünsche! Wir sind stets bemüht, diese Wünsche zu Ihrer Zufriedenheit und pünktlich zu erfüllen.',
+    <br> <br> Sagen oder senden Sie uns einfach Ihre Wünsche! 
+    <br> <br> Wir sind stets bemüht, diese Wünsche zu Ihrer Zufriedenheit und pünktlich zu erfüllen.',
 ];

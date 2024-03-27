@@ -104,7 +104,7 @@
                 <h3 class="mt-4 text-xl font-semibold text-center gb-green-text">
                     {!! __('messages.German Consultant') !!}
                 </h3>
-                <p class="font-medium text-gray-600">Harald Fuechsel</p>
+                <p class="font-bold text-gray-600">Harald Fuechsel</p>
                 <p class="text-sm font-normal text-gray-600">
                     <br>{!! __('messages.Harald Description') !!}
                 </p>
@@ -114,7 +114,7 @@
                 <h3 class="mt-4 text-xl font-semibold gb-green-text">
                     {!! __('messages.Owner and Bakery Manager') !!}
                 </h3>
-                <p class="font-medium text-gray-600">RD. Hena Mulianakusumah</p>
+                <p class="font-bold text-gray-600">RD. Hena Mulianakusumah</p>
                 <p class="text-sm font-normal text-gray-600">
                     <br>{!! __('messages.Hena Description') !!}
                 </p>
@@ -124,7 +124,7 @@
                 <h3 class="mt-4 text-xl font-semibold gb-green-text">
                     {!! __('messages.Master Baker') !!}
                 </h3>
-                <p class="font-medium text-gray-600">Rarigusep</p>
+                <p class="font-bold text-gray-600">Rarigusep</p>
                 <p class="text-sm font-normal text-gray-600">
                 <br>{!! __('messages.Rarigusep Description') !!}
                 </p>
@@ -216,10 +216,13 @@
                                     <div class="text-left">
                                         <i class="fas fa-quote-left text-4xl text-gray-600 mb-4"></i>
                                     </div>
-                                    <p class="mb-4 text-lg text-justify font-normal text-gray-600">"tempatnya enak nyaman dan bagus buat foto2 trs makanannya jga enak recomended bgt deh pkknya🥳😍💃"</p>
+                                    <div class="font-bold text-gray-800">
+                                        <p class="text-lg pb-2">"Perfect for afternoon bites"</p>
+                                        <p class="mb-4 text-sm text-justify font-normal text-gray-600">"Perfect for afternoon bites Found this spot through TripAdvisor and loved it. Cute coffeesop with cheap prices for cakes and drinks. Some heavy meals are also available. Even it's cheap the taste are worth it. I like the cake with orange flavor; rich taste! Many pictures plastered on the wall giving the ambiance like you're in Europe."</p>
+                                    </div>
                                     <div class="flex items-center">
-                                        <img class="w-16 h-16 rounded-full mr-4" src="{{ asset('img/testimonies/ntha.png')}}" alt="profile">
-                                        <p class="text-lg font-semibold text-gray-800">- Ntha Nata</p>
+                                        <img class="w-16 h-16 rounded-full mr-4" src="{{ asset('img/testimonies/coraldreamer.png')}}" alt="profile">
+                                        <p class="text-lg font-semibold text-gray-800">- Coraldreamer</p>
                                     </div>
                                 </div>
                             </div>
@@ -228,10 +231,13 @@
                                     <div class="text-left">
                                         <i class="fas fa-quote-left text-4xl text-gray-600 mb-4"></i>
                                     </div>                                    
-                                    <p class="mb-4 text-lg text-justify font-normal text-gray-600">"Tempatnya nyaman, makanannya enak, 👍👍👍"</p>
+                                    <div class="font-bold text-gray-800">
+                                        <p class="text-lg pb-2">"Tempat pastry terenak"</p>
+                                        <p class="mb-4 text-sm text-justify font-normal text-gray-600">"Tempat yg menyajikan aneka cake & pastry ,beda dari yg lain nya😍😍 Tidak hanya itu tempat ini juga menyediakan food&beverage yg enak² 🤤🤤, yg aku suka dari makanan nya namanya "halbest" ayam panggang enak betull 👍👍🤩🤩"</p>
+                                    </div>                                    
                                     <div class="flex items-center">
-                                        <img class="w-16 h-16 rounded-full mr-4" src="{{ asset('img/testimonies/ella.png')}}" alt="profile">
-                                        <p class="text-lg font-semibold text-gray-800">- Ella Yuliana</p>
+                                        <img class="w-16 h-16 rounded-full mr-4" src="{{ asset('img/testimonies/sakahayang.png')}}" alt="profile">
+                                        <p class="text-lg font-semibold text-gray-800">- Sakahayang</p>
                                     </div>
                                 </div>
                             </div>
@@ -245,10 +251,13 @@
                                     <div class="text-left">
                                         <i class="fas fa-quote-left text-4xl text-gray-600 mb-4"></i>
                                     </div>                                    
-                                    <p class="mb-4 text-lg font-normal text-gray-600">"Tempatnya nyaman dan bagus...apalagi makanannya recomended bgttt deh pkonyaa"</p>
+                                    <div class="font-bold text-gray-800">
+                                        <p class="text-lg pb-2">"Nuansa Jerman di Tasikmalaya"</p>
+                                        <p class="mb-4 text-sm text-justify font-normal text-gray-600">"Bangunannya unik dan keren khas-khas Eropa, di dalamnya jg nyaman banget, di tambah kue dan roti yang rasanya enak dan sesuai sama lidah aku dan jg beda dari toko lainnya yg ada di tasik, mantap pokoknya wajib balik lagi👌👌👍👍"</p>
+                                    </div>                                     
                                     <div class="flex items-center">
-                                        <img class="w-16 h-16 rounded-full mr-4" src="{{ asset('img/testimonies/suci.png')}}" alt="profile">
-                                        <p class="text-lg font-semibold text-gray-800">- Suci Sulistin</p>
+                                        <img class="w-16 h-16 rounded-full mr-4" src="{{ asset('img/testimonies/zanthikan.png')}}" alt="profile">
+                                        <p class="text-lg font-semibold text-gray-800">- ZanthikaN</p>
                                     </div>
                                 </div>
                             </div>
@@ -257,10 +266,13 @@
                                     <div class="text-left">
                                         <i class="fas fa-quote-left text-4xl text-gray-600 mb-4"></i>
                                     </div>                                    
-                                    <p class="mb-4 text-lg font-normal text-gray-600">"cozy place with nice ambience. Freshly baked bread"</p>
+                                    <div class="font-bold text-gray-800">
+                                        <p class="text-lg pb-2">"Best Friend Forever"</p>
+                                        <p class="mb-4 text-sm text-justify font-normal text-gray-600">"Tempatnya cozy....uniq....and d food really really delicious...keren lah pokonyaaa....oiyaaaa....tempatnya ga terlalu rame jugaaaa...jadi bisa santeeeyyyy nikmatin.....top bangeeeddddd"</p>
+                                    </div>                                       
                                     <div class="flex items-center">
-                                        <img class="w-16 h-16 rounded-full mr-4" src="{{ asset('img/testimonies/naomi.png')}}" alt="profile">
-                                        <p class="text-lg font-semibold text-gray-800">- Naomi Stephany Manuhuwa</p>
+                                        <img class="w-16 h-16 rounded-full mr-4" src="{{ asset('img/testimonies/irasuwartika.png')}}" alt="profile">
+                                        <p class="text-lg font-semibold text-gray-800">- Irasuwartika</p>
                                     </div>
                                 </div>
                             </div>
@@ -274,10 +286,13 @@
                                     <div class="text-left">
                                         <i class="fas fa-quote-left text-4xl text-gray-600 mb-4"></i>
                                     </div>                                    
-                                    <p class="mb-4 text-lg font-normal text-gray-600">"Nuansa kafe yang berbeda dan nyaman di Tasikmalaya, wajib coba"</p>
+                                    <div class="font-bold text-gray-800">
+                                        <p class="text-lg pb-2">"Feel Germany in Tasikmalaya"</p>
+                                        <p class="mb-4 text-sm text-justify font-normal text-gray-600">"Excellent German Bakery Products with very good Taste. Clean Place which makes your Stay to a real Success. There is no doubt, People in Berliner Brotfabrik have been trained in Germany."</p>
+                                    </div>                                     
                                     <div class="flex items-center">
-                                        <img class="w-16 h-16 rounded-full mr-4" src="{{ asset('img/testimonies/kakang.png')}}" alt="profile">
-                                        <p class="text-lg font-semibold text-gray-800">- Kakang Millo</p>
+                                        <img class="w-16 h-16 rounded-full mr-4" src="{{ asset('img/testimonies/haraldf.png')}}" alt="profile">
+                                        <p class="text-lg font-semibold text-gray-800">- Harald F</p>
                                     </div>
                                 </div>
                             </div>
@@ -286,10 +301,13 @@
                                     <div class="text-left">
                                         <i class="fas fa-quote-left text-4xl text-gray-600 mb-4"></i>
                                     </div>                                    
-                                    <p class="mb-4 text-lg font-normal text-gray-600">"enak makannya suasana nyaman bt ngobrol..."</p>
+                                    <div class="font-bold text-gray-800">
+                                        <p class="text-lg pb-2">"Willkommen in Deutschland"</p>
+                                        <p class="mb-4 text-sm text-justify font-normal text-gray-600">"Es ist schön diesen Ort gesehen zu haben. Als Deutscher der zum Urlaub auf Java war, ist da wie ein kleines Stück Heimat. Die Produkte besitzen eine hohe Qualität und das Personal war sehr freundlich und Aufmerksam. Wenn ich wieder in der Region bin schau ich auf jeden Fall wieder vorbei."</p>
+                                    </div>                                       
                                     <div class="flex items-center">
-                                        <img class="w-16 h-16 rounded-full mr-4" src="{{ asset('img/testimonies/isye.png')}}" alt="profile">
-                                        <p class="text-lg font-semibold text-gray-800">- Isye Sopiana Natamihardja</p>
+                                        <img class="w-16 h-16 rounded-full mr-4" src="{{ asset('img/testimonies/sebp.png')}}" alt="profile">
+                                        <p class="text-lg font-semibold text-gray-800">- Seb P</p>
                                     </div>
                                 </div>
                             </div>
@@ -303,10 +321,13 @@
                                     <div class="text-left">
                                         <i class="fas fa-quote-left text-4xl text-gray-600 mb-4"></i>
                                     </div>                                    
-                                    <p class="mb-4 text-lg font-normal text-gray-600">"enak tempatnya buat nongky"</p>
+                                    <div class="font-bold text-gray-800">
+                                        <p class="text-lg pb-2">"Tempat nongki yang paling unik"</p>
+                                        <p class="mb-4 text-sm text-justify font-normal text-gray-600">"Makanan di berliner brotfabrik enak enak semua harga terjangkau dan unik unik khas jerman 😍😍Kue ulang tahun yang bagussss"</p>
+                                    </div>                                     
                                     <div class="flex items-center">
-                                        <img class="w-16 h-16 rounded-full mr-4" src="{{ asset('img/testimonies/herry.png')}}" alt="profile">
-                                        <p class="text-lg font-semibold text-gray-800">- Herry Suryana</p>
+                                        <img class="w-16 h-16 rounded-full mr-4" src="{{ asset('img/testimonies/zahras428.png')}}" alt="profile">
+                                        <p class="text-lg font-semibold text-gray-800">- ZahraS428</p>
                                     </div>
                                 </div>
                             </div>
@@ -315,10 +336,13 @@
                                     <div class="text-left">
                                         <i class="fas fa-quote-left text-4xl text-gray-600 mb-4"></i>
                                     </div>                                    
-                                    <p class="mb-4 text-lg font-normal text-gray-600">"Rasanya endos gandos semua, dan harganya pastinya terjangkau oleh semua"</p>
+                                    <div class="font-bold text-gray-800">
+                                        <p class="text-lg pb-2">"Good place, good food.. Try it!"</p>
+                                        <p class="mb-4 text-sm text-justify font-normal text-gray-600">"This pastry / bakery is owned and run by someone who studied pastry in Germany. He created a place that takes us as if it were in Germany. The interior, the accessories, and of course the food and drink are very German. Perfect for hanging out, chatting with old friends while enjoying their delicious bread and cakes. Price is very cheap. A highly recommended place when you are in Tasikmalaya."</p>
+                                    </div>                                      
                                     <div class="flex items-center">
-                                        <img class="w-16 h-16 rounded-full mr-4" src="{{ asset('img/testimonies/lita.png')}}" alt="profile">
-                                        <p class="text-lg font-semibold text-gray-800">- Lita Kusmayadi</p>
+                                        <img class="w-16 h-16 rounded-full mr-4" src="{{ asset('img/testimonies/yeni18.png')}}" alt="profile">
+                                        <p class="text-lg font-semibold text-gray-800">- Yeni18</p>
                                     </div>
                                 </div>
                             </div>

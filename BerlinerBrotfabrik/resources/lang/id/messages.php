@@ -12,13 +12,14 @@ return [
 
 
     // ------ FOOTER ------ //
-    'Berliner Footer Description' => 'Berliner Brotfabrik merupakan Toko Roti dan Pastry Jerman pertama di Tasikmalaya. Menawarkan variasi kue kering, minuman, dan hidangan lainnya yang rendah kalori.',
+    'Berliner Footer Description' => 'Berliner Brotfabrik adalah toko roti dan kue Jerman pertama di Tasikmalaya.
+    Kami menawarkan pilihan kue-kue rendah kalori, serta makanan dan minuman.',
     'Information' => 'Informasi',
     'About Us' => 'Tentang Kami',
     'Contact Us' => 'Hubungi Kami',
-    'Store Open' => 'Jam Buka Toko',
-    'Monday - Saturday' => 'Senin - Sabtu: 10:00 pagi - 20:00 malam',
-    'Sunday' => 'Minggu: 08:00 pagi - 18:00 sore',
+    'Store Open' => 'Jam Buka',
+    'Monday - Saturday' => 'Senin sampai Sabtu : 10:00 sampai 20:00',
+    'Sunday' => 'Minggu: 10:00 sampai 18:00',
 
 
     
@@ -26,20 +27,21 @@ return [
     'First German Bakery' => 'Kedai Roti dan Kue Jerman <br> Pertama di Tasikmalaya',
     'We Make Life Healthy' => 'Dengan kami, <br> anda bisa hidup sehat dengan <br> kalori yang lebih sedikit',
     'Get To Know Us' => 'Kenali Kami',
-    'Get to Know Us Description' => 'Berliner Brotfabrik menawarkan beragam kue kering rendah kalori yang pasti akan menggugah selera Anda sekaligus membantu Anda tetap sehat!',
+    'Get to Know Us Description' => 'Berliner Brotfabrik menawarkan beragam kue rendah kalori yang pasti akan menggoda selera Anda sekaligus membantu Anda menjalani hidup lebih sehat.',
     'Our Story' => 'Cerita Kami',
     // Four Qualities
-    'Consistent Quality' => 'Kualitas yang Konsisten',
-    'Quality Description' => 'Setiap produk dibuat dengan penuh kehati-hatian dan presisi, memastikan kualitas yang konsisten pada setiap pembelian.',
+    'Constant Quality' => 'Kualitas konstan',
+    'Quality Description' => 'Setiap produk dibuat dengan hati-hati dan penuh cinta untuk memastikan kualitas yang konsisten pada setiap pembelian',
     'Fresh' => 'Segar',
-    'Fresh Description' => 'Produk kami disajikan langsung dari oven. Tidak ada yang dibuat sebelumnya atau dipanaskan ulang.',
-    'Sweet' => 'Enak',
-    'Sweet Description' => 'Setiap produk pasti akan memikat selera Anda! Koki kami bekerja keras untuk menciptakan produk yang paling lezat.',
-    'Low Calorie' => 'Kalori yang Sedikit',
-    'Calorie Description' => 'Semua produk dibuat menggunakan bahan-bahan rendah kalori, memastikan kesehatan di setiap gigitan!',
+    'Fresh Description' => 'Makanan panggang kami selalu segar.',
+    'Yummy' => 'Enak',
+    'Yummy Description' => 'Setiap produk pasti akan menggoda selera Anda! Pembuat roti dan koki kami bekerja dengan dedikasi untuk hanya menciptakan kuliner terlezat.',
+    'Low Calorie' => 'Kandungan kalori lebih rendah',
+    'Calorie Description' => 'Produk kami dibuat dengan bahan-bahan berkalori rendah untuk memastikan kesehatan di setiap gigitan.',
     // Things We Make
     'Things We Make' => 'Hal-hal yang Kami Buat',
-    'Things We Make Description' => 'Di Berliner Brotfabrik, kami tidak hanya menjual kue kering, tetapi juga berbagai makanan selain hidangan penutup serta minuman! Lihat menu lengkap kami dan temukan camilan yang sempurna untuk Anda dan teman-teman Anda.',
+    'Things We Make Description' => 'Di Berliner Brotfabrik kami tidak hanya menawarkan kue dan roti, tetapi juga berbagai makanan dan minuman.
+    <br> <br> Lihatlah menu kami dan temukan penawaran yang tepat untuk Anda dan teman Anda.',
     'Full Menu' => 'Menu Lengkap',
 
 
@@ -63,7 +65,7 @@ return [
     'Follow us on Facebook' => 'Ikuti Kami di Facebook',
     'Follow us on Instagram' => 'Ikuti Kami di Instagram',
     'Follow us on TikTok' => 'Ikuti Kami di TikTok',
-    'Follow us on WhatsApp' => 'Kirim pesan ke kami melalui Whatsapp',
+    'Follow us on WhatsApp' => 'Kirimkan surat kepada kami di WhatsApp',
     // Testimony
     'Testimony' => 'Testimoni',
     'What Our Costumers Say' => 'Apa Kata Pelanggan Kami',
