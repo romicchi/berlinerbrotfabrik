@@ -3,23 +3,17 @@
 namespace App\Livewire;
 
 use App\Models\Item;
-use Livewire\Component;
-use Livewire\WithFileUploads;
-use Illuminate\Support\Str;
-use Illuminate\Support\Carbon;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Log;
 use PowerComponents\LivewirePowerGrid\Button;
 use PowerComponents\LivewirePowerGrid\Column;
 use PowerComponents\LivewirePowerGrid\Exportable;
-use PowerComponents\LivewirePowerGrid\Facades\Filter;
 use PowerComponents\LivewirePowerGrid\Footer;
 use PowerComponents\LivewirePowerGrid\Header;
 use PowerComponents\LivewirePowerGrid\PowerGrid;
 use PowerComponents\LivewirePowerGrid\PowerGridFields;
 use PowerComponents\LivewirePowerGrid\PowerGridComponent;
 use PowerComponents\LivewirePowerGrid\Traits\WithExport;
-use Illuminate\Support\Facades\Log;
 
 final class ItemsTable extends PowerGridComponent
 {
@@ -34,8 +28,8 @@ final class ItemsTable extends PowerGridComponent
                 ->striped()
                 ->type(Exportable::TYPE_XLS, Exportable::TYPE_CSV),
             Header::make()
-            ->showSearchInput()
-            ->showToggleColumns(),
+                ->showSearchInput()
+                ->showToggleColumns(),
             Footer::make()
                 ->showPerPage()
                 ->showRecordCount(),
@@ -59,9 +53,9 @@ final class ItemsTable extends PowerGridComponent
             ->add('description')
             ->add('category')
             ->add('type')
-            ->add('image', function($model) {
+            ->add('image', function ($model) {
                 return "<img class='imageModalOpener hover-cursor' src='/images/{$model->image}' width='50' height='50'>";
-            });    
+            });
     }
 
     public function columns(): array
@@ -93,42 +87,33 @@ final class ItemsTable extends PowerGridComponent
 
     public function filters(): array
     {
-        return [
-        ];
+        return [];
     }
 
     #[\Livewire\Attributes\On('edit')]
     public function edit($rowId): void
     {
-        // Fetch the row's data from the database based on the $rowId
-        $item = Item::find($rowId);
-    
-        // Populate a form with the row's data for editing
-        $this->dispatch('editItem', $item);
+        $this->emit('openEditModal', $rowId);
     }
 
     #[\Livewire\Attributes\On('delete')]
     public function delete($rowId): void
     {
         Log::info("Delete method called with ID: $rowId");
-    
-        // Fetch the row's data from the database based on the $rowId
+
         $item = Item::find($rowId);
-    
+
         if ($item) {
-            // Delete the image file from the public/images directory
             $imagePath = public_path('images/' . $item->image);
             if (file_exists($imagePath)) {
                 unlink($imagePath);
             }
-        
-            // Delete the row from the database
+
             $item->delete();
         } else {
             Log::info("Item with ID: $rowId not found");
         }
-        
-        // Refresh the table to show the changes
+
         $this->dispatch('refresh');
     }
 
@@ -137,27 +122,14 @@ final class ItemsTable extends PowerGridComponent
         return [
             Button::add('edit')
                 ->slot('Edit')
-                ->id()
                 ->class('bg-gray-500 rounded-md cursor-pointer text-white px-3 py-2 m-1 text-sm')
-                ->dispatch('editItem', ['rowId' => $row->id]),
-
+                ->dispatch('editItem', ['item' => $row]), // Pass the entire item data instead of just the ID
+    
             Button::add('delete')
-            ->slot('Delete')
-            ->id()
-            ->class('bg-red-500 rounded-md cursor-pointer text-white px-3 py-2 m-1 text-sm')
-            ->dispatch('showDeleteConfirmation', ['rowId' => $row->id]),
+                ->slot('Delete')
+                ->class('bg-red-500 rounded-md cursor-pointer text-white px-3 py-2 m-1 text-sm')
+                ->dispatch('showDeleteConfirmation', ['rowId' => $row->id]),
         ];
     }
-
-    /*
-    public function actionRules($row): array
-    {
-       return [
-            // Hide button edit for ID 1
-            Rule::button('edit')
-                ->when(fn($row) => $row->id === 1)
-                ->hide(),
-        ];
-    }
-    */
+   
 }

@@ -98,40 +98,37 @@
 </div>
 
 <!-- Edit Modal -->
-
 <div id="editModal" class="hidden fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
     <div class="bg-white p-4 rounded relative">
         <button id="closeButton" class="absolute top-0 right-0 m-2 transform translate-x-[-50%] translate-y-[-50%]">
             <i class="fas fa-times"></i>
         </button>
         <h2 class="text-xl mb-2">Edit Item</h2>
-        
         <form id="editForm" method="POST">
             @csrf
             @method('PUT')
-
-            <div>
-                <label for="editName">Name: </label>
-                <input id="editName" name="name" type="text" required>
+            <div class="mb-4">
+                <label for="editName" class="block text-gray-700">Name:</label>
+                <input type="text" id="editName" name="name" class="mt-1 block w-full h-10 border-2 border-gray-300 px-2 rounded-md shadow-sm">
             </div>
 
-            <div>
-                <label for="editDescription">Description: </label>
-                <input id="editDescription" name="description" type="text" required>
+            <div class="mb-4">
+                <label for="editDescription" class="block text-gray-700">Description:</label>
+                <textarea id="editDescription" name="description" class="mt-1 block w-full h-12 border-2 border-gray-300 px-2 py-1 rounded-md shadow-sm"></textarea>
             </div>
 
-            <div>
-                <label for="editCategory">Category: </label>
-                <select id="editCategory" name="category" required>
+            <div class="mb-4">
+                <label for="editCategory" class="block text-gray-700">Category:</label>
+                <select id="editCategory" name="category" class="mt-1 block w-full h-10 border-2 border-gray-300 rounded-md shadow-sm">
                     <option value="bread-pastry">Bread-Pastry</option>
                     <option value="cake-dessert">Cake-Dessert</option>
                     <option value="drinks">Drinks</option>
                 </select>
             </div>
 
-            <div>
-                <label for="editType">Type: </label>
-                <select id="editType" name="type" required>
+            <div class="mb-4">
+                <label for="editType" class="block text-gray-700">Type:</label>
+                <select id="editType" name="type" class="mt-1 block w-full h-10 border-2 border-gray-300 rounded-md shadow-sm">
                     <option value="Regular Item">Regular Item</option>
                     <option value="Best Seller">Best Seller</option>
                 </select>
@@ -162,15 +159,15 @@
 <script>
     // Listen for the editItem event dispatched from Livewire
     window.addEventListener('editItem', event => {
-        const item = event.detail.item;
-
+        const item = event.detail.item; // Fetch the item data from the event detail
+    
         // Populate the modal fields with the item data
         document.getElementById('editForm').action = `/items/${item.id}`;
         document.getElementById('editName').value = item.name;
         document.getElementById('editDescription').value = item.description;
         document.getElementById('editCategory').value = item.category;
         document.getElementById('editType').value = item.type;
-
+    
         // Show the modal
         document.getElementById('editModal').classList.remove('hidden');
     });
@@ -201,7 +198,7 @@
         document.getElementById('confirmDeleteButton').addEventListener('click', () => {
             // Dispatch event to delete item
             Livewire.dispatch('delete', { rowId: event.detail.rowId });
-                    
+
             // Hide the confirmation modal
             document.getElementById('deleteConfirmationModal').classList.add('hidden');
         });
