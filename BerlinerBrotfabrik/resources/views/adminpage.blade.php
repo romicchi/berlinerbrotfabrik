@@ -153,6 +153,18 @@
     </div>
 </div>
 
+<!-- Save Confirmation Modal -->
+<div id="saveConfirmationModal" class="hidden fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
+    <div class="bg-white p-4 rounded relative">
+        <h2 class="text-xl mb-2">Confirm Save</h2>
+        <p>Are you sure you want to save the changes?</p>
+        <div class="mt-4 flex justify-end">
+            <button id="confirmSaveButton" class="px-4 py-2 bg-green-500 text-white rounded mr-2">Yes, Save</button>
+            <button id="cancelSaveButton" class="px-4 py-2 bg-gray-500 text-white rounded">Cancel</button>
+        </div>
+    </div>
+</div>
+
 @include('layouts.footer')
 </body>
     
@@ -160,20 +172,42 @@
     // Listen for the editItem event dispatched from Livewire
     window.addEventListener('editItem', event => {
         const item = event.detail.item; // Fetch the item data from the event detail
-    
+
         // Populate the modal fields with the item data
         document.getElementById('editForm').action = `/items/${item.id}`;
         document.getElementById('editName').value = item.name;
         document.getElementById('editDescription').value = item.description;
         document.getElementById('editCategory').value = item.category;
         document.getElementById('editType').value = item.type;
-    
+
         // Show the modal
         document.getElementById('editModal').classList.remove('hidden');
     });
 
     document.getElementById('closeButton').addEventListener('click', () => {
         document.getElementById('editModal').classList.add('hidden');
+    });
+
+        // Listen for the submit event on the edit form
+        document.getElementById('editForm').addEventListener('submit', (event) => {
+        // Prevent the default form submission
+        event.preventDefault();
+        // Show the save confirmation modal
+        document.getElementById('saveConfirmationModal').classList.remove('hidden');
+    });
+
+    // Handle click on the confirm save button
+    document.getElementById('confirmSaveButton').addEventListener('click', () => {
+        // Submit the form
+        document.getElementById('editForm').submit();
+        // Hide the save confirmation modal
+        document.getElementById('saveConfirmationModal').classList.add('hidden');
+    });
+
+    // Handle click on the cancel save button
+    document.getElementById('cancelSaveButton').addEventListener('click', () => {
+        // Hide the save confirmation modal
+        document.getElementById('saveConfirmationModal').classList.add('hidden');
     });
 
     // Image Modal
