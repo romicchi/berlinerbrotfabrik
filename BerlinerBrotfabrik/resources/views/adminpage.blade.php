@@ -79,11 +79,11 @@
 
 <!--Menu Display Grid-->
 
-<div class="flex flex-col bg-white p-10 rounded shadow-xl mr-4 w-full md:w-2/3 h-full flex-grow">
+<div class="flex flex-col bg-white p-10 rounded shadow-xl mr-4 w-full mb-5 md:w-2/3 h-full flex-grow">
     <h2 class="text-xl mb-3">Items</h2>
-    <div style="height: 458px;">
+    <div class="mb-5">
         <livewire:items-table/>
-        </div>
+    </div>
     </div>
 </div>
 
