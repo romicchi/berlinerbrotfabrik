@@ -14,7 +14,7 @@
         <link href="{{ asset('css/landingpage.css') }}" rel="stylesheet">
         <link href="{{ asset('css/global.css') }}" rel="stylesheet">
     </head>
-    <body>
+    <body class="flex flex-col min-h-screen">
         @include('layouts.navbar')
         <!-- Jumbotron -->
         <section class="bg-center bg-no-repeat bg-cover bg-gray-200 bg-blend-multiply" style="background-image: url('/img/jumbotron.png');" loading="lazy">
@@ -92,7 +92,7 @@
         </div>
 
 <!-- THINGS WE MAKE -->
-<div class="gb-lgreen bg-blend-multiply bg-center bg-no-repeat">
+<div class="flex-grow gb-lgreen bg-blend-multiply bg-center bg-no-repeat">
     <section class="container mx-auto flex flex-col lg:flex-row items-center justify-center py-32 lg:py-40 w-full">
         <div class="lg:w-1/2 lg:pr-16 mb-8 text-center lg:mb-0" data-aos="fade-in" data-aos-duration="1000">
             <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-none gb-lgreen-text md:text-4xl lg:text-5xl">

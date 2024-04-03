@@ -60,27 +60,6 @@
     }
 }
 
-.best-seller-logo {
-    width: 20%; /* Adjust as needed */
-    max-width: 30%;
-    margin: 2% 0 0.5rem;
-    height: auto;
-}
-
-/* For tablets and small desktops */
-@media (max-width: 992px) {
-    .best-seller-logo {
-        width: 70%; /* Adjust as needed */
-    }
-}
-
-/* For mobile phones */
-@media (max-width: 768px) {
-    .best-seller-logo {
-        width: 90%; /* Adjust as needed */
-    }
-}
-
 .category-button {
     background-color: lightgrey !important;
     color: #000 !important;

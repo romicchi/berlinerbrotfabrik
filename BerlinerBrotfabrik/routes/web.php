@@ -48,9 +48,6 @@ Route::middleware(['authenticate'])->group(function () {
 Route::get('/Menu', [MenuController::class, 'showMenuPage'])->name('menupage');
 
 
-Route::get('/menupage/{category}', [MenuController::class, 'getItemsByCategory'])->name('menupage.category');
-
-
 Route::get('/admin', [ItemController::class, 'index']);
 Route::get('/menu', [ItemController::class, 'menu']);
 

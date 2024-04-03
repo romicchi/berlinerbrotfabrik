@@ -61,3 +61,13 @@ body {
 .hover-cursor:hover {
     cursor: pointer;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+}

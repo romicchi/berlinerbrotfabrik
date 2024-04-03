@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Item; 
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 
 class ItemController extends Controller
 {
@@ -25,8 +28,6 @@ public function store(Request $request)
 {
     $request->validate([
         'name' => 'required',
-        'description' => 'required',
-        'category' => 'required',
         'type' => 'required',
         'image' => 'required|image',
     ]);
@@ -37,7 +38,6 @@ public function store(Request $request)
     $item = new Item;
     $item->name = $request->name;
     $item->description = $request->description;
-    $item->category = $request->category;
     $item->type = $request->type;
     $item->image = $imageName;
     $item->save();
@@ -63,6 +63,14 @@ public function update(Request $request, $id)
 
     if ($item) {
         if ($request->hasFile('image')) {
+            // Delete the old image
+            $oldImagePath = public_path('images/' . $item->image);
+            if (file_exists($oldImagePath)) {
+                unlink($oldImagePath);
+                gc_collect_cycles();
+            }
+
+            // Upload the new image
             $imageName = time().'.'.$request->image->extension();  
             $request->image->move(public_path('images'), $imageName);
             $item->image = $imageName;
@@ -70,7 +78,6 @@ public function update(Request $request, $id)
 
         $item->name = $request->name;
         $item->description = $request->description;
-        $item->category = $request->category;
         $item->type = $request->type;
         $item->save();
 

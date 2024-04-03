@@ -17,9 +17,4 @@ use Illuminate\Support\Facades\DB;
                 
                 return view('menupage', ['bestSellerItems' => $bestSellerItems, 'regularItems' => $regularItems]);
             }
-            public function getItemsByCategory($category)
-            {
-                $items = Item::where('category', $category)->get();
-                return response()->json($items);
-            }
         }

@@ -51,7 +51,6 @@ final class ItemsTable extends PowerGridComponent
         return PowerGrid::fields()
             ->add('name')
             ->add('description')
-            ->add('category')
             ->add('type')
             ->add('image', function ($model) {
                 return "<img class='imageModalOpener hover-cursor' src='/images/{$model->image}' width='50' height='50'>";
@@ -66,10 +65,6 @@ final class ItemsTable extends PowerGridComponent
                 ->searchable(),
 
             Column::make('Description', 'description')
-                ->sortable()
-                ->searchable(),
-
-            Column::make('Category', 'category')
                 ->sortable()
                 ->searchable(),
 

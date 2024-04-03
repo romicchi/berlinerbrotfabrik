@@ -43,18 +43,6 @@
             </div>
 
             <div class="mb-4">
-                <label for="category" class="block text-gray-700">Category:</label>
-                <select id="category" name="category" class="mt-1 block w-full h-10 border-2 border-gray-300 rounded-md shadow-sm">
-                    <option value="bread-pastry">Bread-Pastry</option>
-                    <option value="cake-dessert">Cake-Dessert</option>
-                    <option value="drinks">Drinks</option>
-                </select>
-                @error('category')
-                    <small _ngcontent-irw-c66 class="text-danger">* Category is required.</small>
-                @enderror
-            </div>
-
-            <div class="mb-4">
                 <label for="type" class="block text-gray-700">Type:</label>
                 <select id="type" name="type" class="mt-1 block w-full h-10 border-2 border-gray-300 rounded-md shadow-sm">
                     <option value="Regular Item">Regular Item</option>
@@ -98,13 +86,13 @@
 </div>
 
 <!-- Edit Modal -->
-<div id="editModal" class="hidden fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
+<div id="editModal" class="hidden fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50" style="z-index: 9999;">
     <div class="bg-white p-4 rounded relative">
         <button id="closeButton" class="absolute top-0 right-0 m-2 transform translate-x-[-50%] translate-y-[-50%]">
             <i class="fas fa-times"></i>
         </button>
         <h2 class="text-xl mb-2">Edit Item</h2>
-        <form id="editForm" method="POST">
+        <form id="editForm" method="POST" enctype="multipart/form-data">
             @csrf
             @method('PUT')
             <div class="mb-4">
@@ -118,20 +106,16 @@
             </div>
 
             <div class="mb-4">
-                <label for="editCategory" class="block text-gray-700">Category:</label>
-                <select id="editCategory" name="category" class="mt-1 block w-full h-10 border-2 border-gray-300 rounded-md shadow-sm">
-                    <option value="bread-pastry">Bread-Pastry</option>
-                    <option value="cake-dessert">Cake-Dessert</option>
-                    <option value="drinks">Drinks</option>
-                </select>
-            </div>
-
-            <div class="mb-4">
                 <label for="editType" class="block text-gray-700">Type:</label>
                 <select id="editType" name="type" class="mt-1 block w-full h-10 border-2 border-gray-300 rounded-md shadow-sm">
                     <option value="Regular Item">Regular Item</option>
                     <option value="Best Seller">Best Seller</option>
                 </select>
+            </div>
+
+            <div class="mb-4">
+                <label for="editImage" class="block text-gray-700">Image:</label>
+                <input type="file" id="editImage" name="image" class="mt-1 block w-full h-10 border-2 border-gray-300 px-2 py-1 rounded-md shadow-sm">
             </div>
 
             <!-- Add more fields as necessary -->
@@ -177,8 +161,8 @@
         document.getElementById('editForm').action = `/items/${item.id}`;
         document.getElementById('editName').value = item.name;
         document.getElementById('editDescription').value = item.description;
-        document.getElementById('editCategory').value = item.category;
         document.getElementById('editType').value = item.type;
+        document.getElementById('editImage').value = '';
 
         // Show the modal
         document.getElementById('editModal').classList.remove('hidden');
