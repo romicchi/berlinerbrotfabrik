@@ -86,7 +86,7 @@
 </div>
 
 <!-- Edit Modal -->
-<div id="editModal" class="hidden fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50" style="z-index: 9999;">
+<div id="editModal" class="hidden fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50" style="z-index: 9998;">
     <div class="bg-white p-4 rounded relative">
         <button id="closeButton" class="absolute top-0 right-0 m-2 transform translate-x-[-50%] translate-y-[-50%]">
             <i class="fas fa-times"></i>
@@ -138,7 +138,7 @@
 </div>
 
 <!-- Save Confirmation Modal -->
-<div id="saveConfirmationModal" class="hidden fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
+<div id="saveConfirmationModal" class="hidden fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50" style="z-index: 9999;">
     <div class="bg-white p-4 rounded relative">
         <h2 class="text-xl mb-2">Confirm Save</h2>
         <p>Are you sure you want to save the changes?</p>
