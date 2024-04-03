@@ -45,25 +45,29 @@
         </div>
     </div>
 
-<!-- Menu Header -->
-
-<div class="container mt-5">
-    <h2 class="text-center">Menu</h2>
-    <hr class="item-line" style="border: none; border-top: 3px solid #45474B; width: 35%; margin: 1rem auto;">
-<!-- Category Buttons -->
-<div class="d-flex justify-content-center">
-        <button class="btn btn-primary mx-2 category-button" onclick="getItemsByCategory('Bread-Pastry')">Bread/Pastry</button>
-        <button class="btn btn-primary mx-2 category-button" onclick="getItemsByCategory('Cake-Dessert')">Cake/Dessert</button>
-        <button class="btn btn-primary mx-2 category-button" onclick="getItemsByCategory('Drinks')">Drinks</button>
-    </div>
+    <!-- Menu Header -->
+    <div class="container mt-5">
+        <h2 class="text-center">Menu</h2>
+            <hr class="item-line" style="border: none; border-top: 3px solid #45474B; width: 35%; margin: 1rem auto;">
 
     <!-- Regular Items -->
-<div class="container mt-5">
-    <div class="grid grid-cols-3 gap-4 justify-center" id="regularItemsContainer">
-        <!-- Regular items will be loaded here -->
+        <div id="regularItemsCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" id="regularItemsContainer">
+                <!-- Regular items will be loaded here -->
+        </div>
+
+        <!-- Next and previous buttons -->
+            <a class="carousel-control-prev" href="#regularItemsCarousel" role="button" data-slide="prev" style="width: auto; background: rgba(211, 211, 211, 0.8); left: 0;" onclick="previousRegularSlide()">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#regularItemsCarousel" role="button" data-slide="next" style="width: auto; background: rgba(211, 211, 211, 0.8); right: 0;" onclick="nextRegularSlide()">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div>
     </div>
-</div>
-</div>
 <div class="mt-4">
 @include('layouts.footer')
 </div>
@@ -71,62 +75,48 @@
 </body>
 
 <script>
-// Load the 'Bread-Pastry' items when the page loads
-getItemsByCategory('Bread-Pastry');
+    let regularItems = @json($regularItems);
+    let regularIndex = 0;
 
-function getItemsByCategory(category) {
-    // Construct the URL and log it to the console
-    let url = '{{ url('/') }}/menupage/' + category;
-    console.log(url);
+        window.onload = function() {
+            loadRegularItems();
+            nextRegularSlide();
+}
 
-    // Send an AJAX request to the server
-    fetch(url)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(items => {
-            // Sort items by name
-            items.sort((a, b) => a.name.localeCompare(b.name));
+    function loadRegularItems() {
+        // Sort the regularItems array by the name property using a natural sort algorithm
+        regularItems.sort(function(a, b) {
+            return a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: 'base' });
+        });
+    
+        let regularItemsContainer = document.getElementById('regularItemsContainer');
+        regularItems.forEach((item, index) => {
+            let div = document.createElement('div');
+            div.className = 'carousel-item' + (index === 0 ? ' active' : '');
+            div.innerHTML = `
+                <img src="/images/${item.image}" class="d-block w-100" alt="${item.name}">
+            `;
+            regularItemsContainer.appendChild(div);
+        });
+}
 
-            // Clear the items container
-            let container = document.getElementById('regularItemsContainer');
-            container.innerHTML = '';
+    loadRegularItems();
+    nextRegularSlide();
 
-            // Add each item to the container
-            items.forEach(item => {
-                let div = document.createElement('div');
-                div.className = 'max-w-xs rounded overflow-hidden shadow-md bg-white';
-                        
-                // Add the item image, name, and description to the div
-                div.innerHTML = `
-                    <div class="w-full h-64 bg-cover bg-center" style="background-image: url('{{ asset('images/') }}/${item.image}');"></div>
-                    <div class="px-6 py-4">
-                        <div class="font-bold text-xl mb-2">${item.name}</div>
-                        <p class="text-gray-700 text-base">${item.description}</p>
-                    </div>
-                `;
-                        
-                // Add the div to the container
-                container.appendChild(div);
-            });
+    function nextRegularSlide() {
+        regularIndex = (regularIndex + 1) % regularItems.length;
+        updateRegularSlides();
+}
 
-            // Calculate the number of items in the last row
-            let itemsInLastRow = items.length % 3;
+    function previousRegularSlide() {
+        regularIndex = (regularIndex - 1 + regularItems.length) % regularItems.length;
+        updateRegularSlides();
+}
 
-            // If the last row is not full, add empty gray cards
-            if (itemsInLastRow > 0) {
-                for (let i = itemsInLastRow; i < 3; i++) {
-                    let div = document.createElement('div');
-                    div.className = 'max-w-xs rounded overflow-hidden shadow-md bg-gray-200';
-                    container.appendChild(div);
-                }
-            }
-        })
-        .catch(error => {
-            console.error('There has been a problem with your fetch operation:', error);
+    function updateRegularSlides() {
+        let carouselItems = document.querySelectorAll('#regularItemsContainer .carousel-item');
+        carouselItems.forEach((item, index) => {
+            item.className = 'carousel-item' + (index === regularIndex ? ' active' : '');
         });
 }
 
