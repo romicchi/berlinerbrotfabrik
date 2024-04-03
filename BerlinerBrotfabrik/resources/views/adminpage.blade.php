@@ -78,9 +78,9 @@
 <!-- Image Modal -->
 <div id="imageModal" class="hidden fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
     <div class="bg-white p-4 rounded relative">
-        <img id="modalImage" src="" alt="Modal Image" style="max-width: 400px; max-height: 400px; object-fit: contain;" class="mx-auto">
+        <img id="modalImage" src="" alt="Modal Image" style="max-width: 500px; max-height: 500px; object-fit: contain;" class="mx-auto">
     </div>
-    <button id="closeImageModal" class="absolute top-0 right-0 m-2 transform translate-x-[20%] translate-y-[-20%] text-red-600 hover:text-red-900 text-4xl">
+    <button id="closeImageModal" class="absolute top-0 right-0 m-2 transform translate-x-[20%] translate-y-[-20%] text-red-600 hover:text-red-900 text-6xl">
         <i class="fas fa-times"></i>
     </button>
 </div>
