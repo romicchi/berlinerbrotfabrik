@@ -42,6 +42,7 @@ return [
     'Our Story About Us' => 'Our Story',
     'Who We Are' => 'Who We Are',
     'Our Team' => 'Our Team',
+    'Our Team Description' => 'Meet the passionate artisans behind Berliner BrotFabrik, each dedicated to crafting the finest baked goods.',
     'Our Management' => 'Our Management',
     // Harald Fuechsel
     'German Consultant' => 'German Consultant',

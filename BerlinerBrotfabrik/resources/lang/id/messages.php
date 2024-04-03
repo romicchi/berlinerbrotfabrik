@@ -50,6 +50,7 @@ return [
     'Our Story About Us' => 'Sejarah “Berliner Brotfabrik”',
     'Who We Are' => 'Siapa Kami',
     'Our Team' => 'Tim Kami',
+    'Our Team Description' => 'Temui para perajin berbakat di balik Berliner BrotFabrik, yang masing-masing berdedikasi untuk membuat makanan panggang terbaik.',
     'Our Management' => 'Manajemen Kami',
     // Harald Fuechsel
     'German Consultant' => 'Konsultan Jerman',

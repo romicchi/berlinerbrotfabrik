@@ -42,6 +42,7 @@ return [
     'Our Story About Us' => 'Geschichte der Berliner Brotfabrik',
     'Who We Are' => 'Wer wir sind',
     'Our Team' => 'Unser Team',
+    'Our Team Description' => 'Lernen Sie die leidenschaftlichen Handwerker hinter der Berliner BrotFabrik kennen, die sich alle der Herstellung der feinsten Backwaren verschrieben haben.',
     'Our Management' => 'Unsere Geschäftsleitung',
     // Harald Fuechsel
     'German Consultant' => 'Unsere Geschäftsleitung',

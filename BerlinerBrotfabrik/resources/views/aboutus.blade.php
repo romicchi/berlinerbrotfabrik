@@ -76,7 +76,7 @@
                 {!! __('messages.Our Team') !!}
             </h2>
             <h3 class="font-bold text-gray-600">
-                {!! __('messages.Lorem') !!}
+                {!! __('messages.Our Team Description') !!}
             </h3>
             <div class="w-20 h-1 gb-lgreen rounded-full mx-auto mt-6 mb-6"></div>
         </section>
@@ -92,9 +92,6 @@
             <h2 class="mb-4 text-3xl font-bold tracking-tight leading-none gb-green-text md:text-3xl lg:text-4xl">
                 {!! __('messages.Our Management') !!}
             </h2>
-            <h3 class="font-bold text-gray-600">
-                {!! __('messages.Lorem') !!}
-            </h3>
             <div class="w-20 h-1 gb-lgreen rounded-full mx-auto mt-6 mb-6"></div>
         </section>
 

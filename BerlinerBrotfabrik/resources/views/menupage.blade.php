@@ -57,11 +57,11 @@
         </div>
 
         <!-- Next and previous buttons -->
-            <a class="carousel-control-prev" href="#regularItemsCarousel" role="button" data-slide="prev" style="width: auto; background: rgba(211, 211, 211, 0.8); left: 0;" onclick="previousRegularSlide()">
+            <a class="carousel-control-prev" role="button" data-slide="prev" style="width: auto; background: rgba(211, 211, 211, 0.8); left: 0;" onclick="previousRegularSlide()">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#regularItemsCarousel" role="button" data-slide="next" style="width: auto; background: rgba(211, 211, 211, 0.8); right: 0;" onclick="nextRegularSlide()">
+            <a class="carousel-control-next" role="button" data-slide="next" style="width: auto; background: rgba(211, 211, 211, 0.8); right: 0;" onclick="nextRegularSlide()">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
