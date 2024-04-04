@@ -20,7 +20,7 @@
         <header class="bg-center bg-no-repeat bg-cover py-2 lg:py-4 bg-gray-200 bg-blend-multiply" style="background-image: url('/img/sub-header.png');" loading="lazy">
             <div class="mx-5 max-w-screen-xl text-center lg:text-left">
                 <p class="text-sm lg:text-lg font-normal text-gray-200 lg:text-outline tracking-widest">
-                <a href="{{ url('/Welcome') }}">Home</a> / {!! __('messages.Contact Us')!!}</p>
+                <a href="{{ url('/') }}">Home</a> / {!! __('messages.Contact Us')!!}</p>
             </div>
         </header>
         

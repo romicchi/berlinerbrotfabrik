@@ -19,7 +19,7 @@
     <header class="bg-center bg-no-repeat bg-cover py-1 py-lg-3 bg-gray-200 bg-blend-multiply" style="background-image: url('/img/sub-header.png');" loading="lazy">
         <div class="mx-4 max-w-screen-xl text-center text-lg-left">
             <p class="text-lg text-lg-lg font-weight-normal text-gray-200 tracking-widest" style="margin-bottom: 0px;">
-            <a class="a-link" href="{{ url('/Welcome') }}">Home</a> / {!! __('messages.Menu')!!}</p>
+            <a class="a-link" href="{{ url('/') }}">Home</a> / {!! __('messages.Menu')!!}</p>
         </div>
     </header>
 
