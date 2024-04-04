@@ -76,7 +76,7 @@
 
 <script>
     let regularItems = @json($regularItems);
-    let regularIndex = 0;
+    let regularIndex = -2;
 
         window.onload = function() {
             loadRegularItems();
@@ -92,7 +92,7 @@
         let regularItemsContainer = document.getElementById('regularItemsContainer');
         regularItems.forEach((item, index) => {
             let div = document.createElement('div');
-            div.className = 'carousel-item' + (index === 0 ? ' active' : '');
+            div.className = 'carousel-item' + (index === -2 ? ' active' : '');
             div.innerHTML = `
                 <img src="/images/${item.image}" class="d-block w-100" alt="${item.name}">
             `;
